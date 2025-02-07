@@ -183,3 +183,40 @@ for word, count, score in top_words:
     print(f"Word: {word}, Occurrences: {count}, BM25 Score: {score}")
 
 
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+import numpy as np
+
+def get_top_words_tfidf(corpus, top_n=100):
+    # Initialize TF-IDF and Count Vectorizer
+    tfidf_vectorizer = TfidfVectorizer(stop_words='english', max_features=top_n)
+    count_vectorizer = CountVectorizer(stop_words='english', max_features=top_n)
+    
+    # Fit and transform the corpus into TF-IDF and count matrices
+    tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
+    count_matrix = count_vectorizer.fit_transform(corpus)
+    
+    # Get feature names (words)
+    feature_names = np.array(tfidf_vectorizer.get_feature_names_out())
+    
+    # Get the TF-IDF scores and word frequencies
+    tfidf_scores = np.array(tfidf_matrix.sum(axis=0)).flatten()
+    word_frequencies = np.array(count_matrix.sum(axis=0)).flatten()
+    
+    # Get top N words based on TF-IDF scores
+    sorted_indices = np.argsort(tfidf_scores)[::-1]
+    
+    # Prepare top words along with their frequency and TF-IDF score
+    top_words = [(feature_names[i], word_frequencies[i], tfidf_scores[i]) for i in sorted_indices[:top_n]]
+    
+    return top_words
+
+# Example usage
+corpus = [
+    "This is a sample document.",
+    "This document is another example.",
+    "TF-IDF is a ranking function used in information retrieval."
+]
+
+top_words = get_top_words_tfidf(corpus)
+for word, freq, score in top_words:
+    print(f"Word: {word}, Frequency: {freq}, TF-IDF Score: {score}")
