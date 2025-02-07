@@ -29,3 +29,29 @@ texts = ["Hello, World!", "  Python is great!!! ", "Let's clean this #text?"]
 cleaned = clean_text_parallel(texts)
 print(cleaned) 
 
+import re
+import multiprocessing
+from tqdm import tqdm
+
+def clean_text(text):
+    """Cleans text by removing special characters and extra spaces."""
+    text = text.lower()  # Convert to lowercase
+    text = re.sub(r"[^a-zA-Z0-9\s]", "", text)  # Remove special characters
+    text = re.sub(r"\s+", " ", text).strip()  # Remove extra spaces
+    return text
+
+def clean_text_parallel(text_list):
+    """Cleans a list of texts in parallel inside a Jupyter Notebook."""
+    ctx = multiprocessing.get_context("fork")  # Use 'fork' to avoid Windows issues
+    with ctx.Pool(processes=multiprocessing.cpu_count()) as pool:
+        results = list(tqdm(pool.imap(clean_text, text_list), total=len(text_list)))
+    return results
+
+# Example usage inside a function in a Jupyter Notebook
+def process_texts():
+    texts = ["Hello, World!", "  Python is great!!! ", "Let's clean this #text?"]
+    cleaned = clean_text_parallel(texts)
+    print(cleaned)
+
+# Run the function
+process_texts()
