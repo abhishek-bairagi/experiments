@@ -1,76 +1,51 @@
-import numpy as np
 import pandas as pd
-import pickle
-from scipy.stats import chi2_contingency
+import scipy.stats as stats
 from collections import Counter
 
-# Load Training Data (Q4 2023)
-with open("q4_23_kb_details_new.pkl", "rb") as file:
-    df_train = pickle.load(file)  # Load DataFrame
-
-# Load Test Data (Q3+Q4 2024)
-with open("q3_24_kb_details_new.pkl", "rb") as file:
-    df_test1 = pickle.load(file)  # Load DataFrame
-with open("q4_24_kb_details_new.pkl", "rb") as file:
-    df_test2 = pickle.load(file)  # Load DataFrame
-
-df_test = pd.concat([df_test1, df_test2])
-
-# Initialize keyword-article count dictionaries
-base_words_q4_23 = {}  # Training data keyword-article counts
-base_words_second_half = {}  # Test data keyword-article counts
-
-# Extract keyword-article frequencies from Training Data
-top_words = set()  # Collect unique keywords
-
-for i, row in df_train.iterrows():
-    for word in row['user_text'].split():  # Extract words from user query
-        top_words.add(word)  # Store keywords for reference
-        if word not in base_words_q4_23:
-            base_words_q4_23[word] = Counter()
-        for col in ['kb_id_1', 'kb_id_2', 'kb_id_3']:
-            if row[col] != '':
-                base_words_q4_23[word][row[col]] += 1  # Increment count
-
-# Extract keyword-article frequencies from Test Data
-for i, row in df_test.iterrows():
-    for word in row['user_text'].split():
-        if word not in base_words_second_half:
-            base_words_second_half[word] = Counter()
-        for col in ['kb_id_1', 'kb_id_2', 'kb_id_3']:
-            if row[col] != '':
-                base_words_second_half[word][row[col]] += 1  # Increment count
-
-# Compute Total Keyword Counts in Training & Test
-total_train_keywords = sum(sum(counter.values()) for counter in base_words_q4_23.values())
-total_test_keywords = sum(sum(counter.values()) for counter in base_words_second_half.values())
-
-# Compute p-values for each (keyword, article) pair
-results = []
-
-for word in top_words:
-    if word not in base_words_q4_23 or word not in base_words_second_half:
-        continue  # Skip words missing in either dataset
+# Function to count word occurrences per article
+def count_word_article(df, top_words):
+    word_article_counts = {}
     
-    for article in set(base_words_q4_23[word].keys()).union(base_words_second_half[word].keys()):
-        train_count = base_words_q4_23[word].get(article, 0)  # Count in training
-        test_count = base_words_second_half[word].get(article, 0)  # Count in test
+    for _, row in df.iterrows():
+        articles = [row['kb_id_1'], row['kb_id_2'], row['kb_id_3']]
+        words = set(row['user_text'].split())  # Unique words in the query
+        
+        for word in words:
+            if word in top_words:
+                for article in articles:
+                    if (word, article) not in word_article_counts:
+                        word_article_counts[(word, article)] = 0
+                    word_article_counts[(word, article)] += 1
+    
+    return word_article_counts
 
-        remaining_train = total_train_keywords - train_count  # Remaining keyword occurrences
-        remaining_test = total_test_keywords - test_count  # Remaining keyword occurrences
+# Compute word-article counts for both quarters
+word_article_counts_q1 = count_word_article(df_new, top_words_second_half)
+word_article_counts_q2 = count_word_article(df_new1, top_words_second_half)
 
-        # Construct contingency table
-        table = np.array([[train_count, remaining_train], [test_count, remaining_test]])
+# Collect all (word, article) pairs
+all_pairs = set(word_article_counts_q1.keys()).union(set(word_article_counts_q2.keys()))
 
-        # Perform Chi-Square Test
-        chi2_stat, p_value, _, _ = chi2_contingency(table)
+# Prepare results
+data = []
 
-        # Store results
-        results.append((word, article, train_count, test_count, p_value))
+for word, article in all_pairs:
+    count_q1 = word_article_counts_q1.get((word, article), 0)
+    count_q2 = word_article_counts_q2.get((word, article), 0)
+    total_q1 = sum(word_article_counts_q1.values())
+    total_q2 = sum(word_article_counts_q2.values())
+    
+    # Chi-square contingency table
+    contingency_table = [[count_q1, count_q2], [total_q1 - count_q1, total_q2 - count_q2]]
+    chi2, p_value, _, _ = stats.chi2_contingency(contingency_table)
+    
+    data.append((word, article, count_q1, count_q2, p_value))
 
-# Convert results to DataFrame
-df_results = pd.DataFrame(results, columns=['Keyword', 'Article', 'Train Count', 'Test Count', 'p-value'])
+# Convert to DataFrame
+p_values_df = pd.DataFrame(data, columns=['Word', 'Article', 'Count_Q1', 'Count_Q2', 'P_Value'])
 
-# Display Significant Drift Results (p < 0.05)
-df_drift = df_results[df_results['p-value'] < 0.05]
-print(df_drift)
+# Sort by p-value
+p_values_df = p_values_df.sort_values(by='P_Value')
+
+# Display significant concept drift (p < 0.05)
+print(p_values_df[p_values_df['P_Value'] < 0.05])
