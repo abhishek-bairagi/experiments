@@ -55,3 +55,27 @@ def process_texts():
 
 # Run the function
 process_texts()
+
+
+import nltk
+from nltk.corpus import wordnet
+
+# Ensure WordNet is downloaded
+nltk.download("wordnet")
+
+def detect_meaningful_words(sentence):
+    words = sentence.split()
+    meaningful_words = []
+    
+    for word in words:
+        # Check if the word exists in WordNet
+        if wordnet.synsets(word):
+            meaningful_words.append(word)
+    
+    return meaningful_words
+
+# Example usage
+sentence = "The ticketstatusclassification is irrelevant to this discussion, and Python is awesome."
+meaningful_words = detect_meaningful_words(sentence)
+print(f"Meaningful words: {meaningful_words}")
+
