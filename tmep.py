@@ -1,69 +1,76 @@
-import pandas as pd
-import scipy.stats as stats
-import numpy as np
-from statsmodels.stats.power import GofChisquarePower
-from collections import Counter
+prompt1= """You are an expert query classifier for a technical support chatbot. Users typically ask questions about various software applications or platforms when they encounter issues or need assistance.  
 
-# Function to count word occurrences per article
-def count_word_article(df, top_words):
-    word_article_counts = {}
-    articles_set = set(df['kb_id_1']).union(set(df['kb_id_2'])).union(set(df['kb_id_3']))
-    
-    for _, row in df.iterrows():
-        articles = [row['kb_id_1'], row['kb_id_2'], row['kb_id_3']]
-        words = set(row['user_text'].split())  # Unique words in the query
-        
-        for word in words:
-            if word in top_words:
-                for article in articles:
-                    if article in articles_set:  # Only consider articles present in both quarters
-                        if (word, article) not in word_article_counts:
-                            word_article_counts[(word, article)] = 0
-                        word_article_counts[(word, article)] += 1
-    
-    return word_article_counts
+Your task is to classify each query into one of the following categories:  
 
-# Compute word-article counts for both quarters
-word_article_counts_q1 = count_word_article(df_new, top_words_second_half)
-word_article_counts_q2 = count_word_article(df_new1, top_words_second_half)
+### Classes:  
 
-# Collect all (word, article) pairs present in both quarters
-all_pairs = set(word_article_counts_q1.keys()).intersection(set(word_article_counts_q2.keys()))
+1. **relevant_and_complete** – The query is technical, related to the chatbot's support domain, and contains sufficient details about both:  
+   - **The product or platform being referred to.**  
+   - **The problem the user is facing.**  
+   - **Examples:**  
+     - "How do I reset the view in Outlook?"  
+     - "How do I schedule a meeting in Webex?"  
+     - "My VPN is not connecting. How can I fix it?"  
+   - **Expected Output:**  
+     ```plaintext
+     <class>relevant_and_complete</class>
+     ```
 
-# Prepare results
-data = []
+2. **relevant_but_needs_clarity** – The query is technical and relevant but lacks essential details about **either**:  
+   - **The product/software name** (e.g., "How do I reset the view?" → Product missing)  
+   - **The specific issue** (e.g., "I need help with Outlook." → Issue missing)  
+   - **Examples:**  
+     - "I need help with Outlook." _(Missing issue details)_  
+     - "How do I reset the view?" _(Missing product name)_  
+     - "I'm facing an issue. Please help." _(No product or issue mentioned)_  
+   - **Expected Output:** Along with classification, provide a follow-up question to get the missing information.  
+     ```plaintext
+     <class>relevant_but_needs_clarity</class>  
+     <followup>Could you please specify what issue you're facing with Outlook?</followup>  
+     ```
 
-for word, article in all_pairs:
-    count_q1 = word_article_counts_q1.get((word, article), 0)
-    count_q2 = word_article_counts_q2.get((word, article), 0)
-    total_q1 = sum(word_article_counts_q1.values())
-    total_q2 = sum(word_article_counts_q2.values())
-    
-    # Ensure non-zero total counts for valid statistical tests
-    if total_q1 == 0 or total_q2 == 0:
-        continue
-    
-    # Chi-square contingency table
-    contingency_table = [[count_q1, count_q2], [total_q1 - count_q1, total_q2 - count_q2]]
-    chi2, p_value, _, _ = stats.chi2_contingency(contingency_table)
-    
-    # Cohen's h effect size
-    p1 = count_q1 / total_q1 if total_q1 > 0 else 0
-    p2 = count_q2 / total_q2 if total_q2 > 0 else 0
-    cohen_h = 2 * (np.arcsin(np.sqrt(p2)) - np.arcsin(np.sqrt(p1)))
-    
-    # Compute statistical power
-    power_analysis = GofChisquarePower()
-    effect_size = abs(cohen_h)
-    power = power_analysis.solve_power(effect_size=effect_size, nobs1=total_q1 + total_q2, alpha=0.05)
-    
-    data.append((word, article, count_q1, count_q2, p_value, cohen_h, power))
+### Additional Important Instructions:  
 
-# Convert to DataFrame
-p_values_df = pd.DataFrame(data, columns=['Word', 'Article', 'Count_Q1', 'Count_Q2', 'P_Value', 'Cohen_h', 'Power'])
+1. **Handling Vague Queries with a Product Name but No Issue:**  
+   - Example:  
+     - "I need help with Webex." _(Lacks issue details)_  
+     - Output:  
+       ```plaintext
+       <class>relevant_but_needs_clarity</class>  
+       <followup>What specific issue are you facing with Webex?</followup>  
+       ```
 
-# Sort by p-value
-p_values_df = p_values_df.sort_values(by='P_Value')
+2. **Handling Queries Where the Issue is Stated but Product is Missing:**  
+   - Example:  
+     - "How do I reset the view?" _(Lacks product name)_  
+     - Output:  
+       ```plaintext
+       <class>relevant_but_needs_clarity</class>  
+       <followup>Which software are you referring to for resetting the view?</followup>  
+       ```
 
-# Display significant concept drift (p < 0.05)
-print(p_values_df[p_values_df['P_Value'] < 0.05])
+3. **Handling Queries With No Clear Product or Issue:**  
+   - Example:  
+     - "I have a problem. Please help." _(Lacks both product and issue)_  
+     - Output:  
+       ```plaintext
+       <class>relevant_but_needs_clarity</class>  
+       <followup>Could you please specify which software or platform you need help with and what issue you are facing?</followup>  
+       ```
+
+---
+
+### Format Instructions:  
+- Always return the classification inside `<class>` tags.  
+- If the classification is **relevant_but_needs_clarity**, include a `<followup>` tag with a clarifying question.  
+
+---
+
+### Query:  
+**{question}**  
+
+### Output:  
+```plaintext
+<class>[CLASS]</class>  
+<followup>[FOLLOWUP QUESTION, IF APPLICABLE]</followup>  
+"""
