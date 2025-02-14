@@ -1,226 +1,68 @@
-products_info = [
-    {
-        "Name": "Slack",
-        "Description": "Slack is a messaging and collaboration platform for teams, offering channels, direct messaging, and integrations.",
-        "Common Issues": [
-            "Unable to send messages",
-            "Notifications not working",
-            "Integration issues with third-party apps",
-            "File uploads failing",
-            "Cannot join or create channels",
-            "Login problems",
-            "Slow performance or app freezing",
-            "Mentions not triggering notifications",
-            "Search functionality not returning results",
-            "Audio/video calls not connecting"
-        ]
-    },
-    {
-        "Name": "Webex",
-        "Description": "Webex is a video conferencing and collaboration tool for meetings, messaging, and calling.",
-        "Common Issues": [
-            "Unable to join meetings",
-            "Microphone not working",
-            "Camera not detected",
-            "Screen sharing not available",
-            "Meeting recordings missing",
-            "Connection issues and dropped calls",
-            "Audio echo during calls",
-            "Login authentication problems",
-            "Chat messages not delivering",
-            "Unable to schedule meetings"
-        ]
-    },
-    {
-        "Name": "Outlook",
-        "Description": "Outlook is an email and calendar management application from Microsoft.",
-        "Common Issues": [
-            "Emails not sending or receiving",
-            "Unable to add or sync accounts",
-            "Search function not working",
-            "Calendar events disappearing",
-            "Frequent app crashes",
-            "Spam filters not functioning correctly",
-            "Attachments not downloading",
-            "Rules and filters not applying",
-            "Outlook not connecting to server",
-            "Emails stuck in Outbox"
-        ]
-    },
-    {
-        "Name": "Avaya",
-        "Description": "Avaya provides communication solutions including VoIP and contact center software.",
-        "Common Issues": [
-            "Softphone not connecting",
-            "Dropped calls",
-            "Audio quality issues",
-            "Login authentication failures",
-            "Call forwarding not working",
-            "Voicemail not accessible",
-            "Phone extension errors",
-            "Conference calling issues",
-            "Call logs missing",
-            "Headset compatibility problems"
-        ]
-    },
-    {
-        "Name": "Mac",
-        "Description": "macOS is Apple's operating system for Mac computers.",
-        "Common Issues": [
-            "Slow performance",
-            "Wi-Fi connectivity issues",
-            "Application crashes",
-            "System updates failing",
-            "Bluetooth not connecting",
-            "External display not detected",
-            "Startup disk errors",
-            "Battery draining too fast",
-            "File permissions issues",
-            "Spotlight search not working"
-        ]
-    },
-    {
-        "Name": "Virtual Desktop",
-        "Description": "Virtual desktops allow users to access a cloud-based or remote computing environment.",
-        "Common Issues": [
-            "Unable to connect to virtual desktop",
-            "Performance lag",
-            "Printer redirection not working",
-            "Clipboard sharing not functioning",
-            "Session timeout issues",
-            "USB device pass-through failing",
-            "Screen resolution problems",
-            "File access permissions errors",
-            "Mouse or keyboard input lag",
-            "Network latency affecting performance"
-        ]
-    },
-    {
-        "Name": "Windows",
-        "Description": "Windows is a popular operating system developed by Microsoft.",
-        "Common Issues": [
-            "Slow boot times",
-            "Windows updates failing",
-            "Network connectivity issues",
-            "Blue screen errors",
-            "Applications not responding",
-            "File Explorer crashes",
-            "Driver compatibility problems",
-            "Security and antivirus issues",
-            "Sound not working",
-            "Display resolution problems"
-        ]
-    },
-    {
-        "Name": "Clic",
-        "Description": "CLIC is an internal tool used for communication and collaboration within enterprises.",
-        "Common Issues": [
-            "Login issues",
-            "Messages not delivering",
-            "Slow application performance",
-            "Search functionality not working",
-            "Integration issues with other platforms",
-            "Notifications not appearing",
-            "File sharing failing",
-            "User permissions not applied correctly",
-            "Access restrictions",
-            "System errors during use"
-        ]
-    },
-    {
-        "Name": "VPN",
-        "Description": "A VPN (Virtual Private Network) allows secure remote access to a network.",
-        "Common Issues": [
-            "Unable to connect to VPN",
-            "Slow VPN speeds",
-            "Frequent disconnections",
-            "DNS resolution issues",
-            "Authentication errors",
-            "IP address not changing",
-            "Blocked access to certain sites",
-            "VPN client crashing",
-            "Split tunneling not working",
-            "Firewall blocking VPN connection"
-        ]
-    },
-    {
-        "Name": "Browser",
-        "Description": "Web browsers are software applications used for accessing the internet.",
-        "Common Issues": [
-            "Slow browsing speed",
-            "Pages not loading",
-            "Frequent crashes",
-            "Extensions causing performance issues",
-            "Pop-ups and ads blocking functionality",
-            "Bookmarks not syncing",
-            "Login auto-fill not working",
-            "Security certificate warnings",
-            "Cookies and cache causing errors",
-            "Unable to play videos"
-        ]
-    },
-    {
-        "Name": "Okta",
-        "Description": "Okta is an identity and access management service used for authentication.",
-        "Common Issues": [
-            "Login failures",
-            "MFA (Multi-Factor Authentication) not working",
-            "Account lockout issues",
-            "SSO (Single Sign-On) not functioning",
-            "Token expiration errors",
-            "User permissions misconfigured",
-            "API authentication failing",
-            "Password reset not working",
-            "Browser compatibility issues",
-            "Session timeout problems"
-        ]
-    },
-    {
-        "Name": "OneDrive",
-        "Description": "OneDrive is Microsoft's cloud storage service for file synchronization and backup.",
-        "Common Issues": [
-            "Files not syncing",
-            "Storage space errors",
-            "Slow upload/download speeds",
-            "File sharing permissions issues",
-            "Sync conflicts between devices",
-            "Deleted files not appearing in recycle bin",
-            "App crashing on startup",
-            "Cannot access shared folders",
-            "OneDrive not starting automatically",
-            "Version history missing"
-        ]
-    },
-    {
-        "Name": "Genesys",
-        "Description": "Genesys is a cloud-based contact center solution used for customer engagement.",
-        "Common Issues": [
-            "Call routing errors",
-            "Agent login issues",
-            "Screen pop-ups not appearing",
-            "CRM integration failures",
-            "Dropped calls",
-            "Queue assignment problems",
-            "Voice quality issues",
-            "Chatbot automation errors",
-            "Email ticketing system delays",
-            "Reporting and analytics errors"
-        ]
-    },
-    {
-        "Name": "Opus",
-        "Description": "Opus is a communication and workflow management tool used in enterprises.",
-        "Common Issues": [
-            "Task management errors",
-            "Notification delays",
-            "Access permissions not applying",
-            "Login issues",
-            "File sharing failing",
-            "Workflow automation glitches",
-            "Search function not returning results",
-            "Mobile app not syncing",
-            "Slow performance",
-            "API integration failures"
-        ]
-    }
-]
+class MasterAgent:
+    def __init__(self, product_list: list):
+        self.product_list = product_list
+        self.chat_history = []
+        self.attempts = 0
+
+    def identify_intent(self, user_message: str) -> str:
+        prompt = f"""
+        You are a supporting agent for Tech-care chatbot, which helps colleagues with different software and product-related issues.
+        Identify the intent of the given user message from the following categories: Greeting, Goodbye, Chitchat, Connect to an engineer, Technical query.
+        
+        User: {user_message}
+        Intent:
+        """
+        response = call_llm(prompt)
+        return response.strip()
+
+    def determine_flag_followup(self, user_message: str) -> dict:
+        prompt = f"""
+        You are a supporting agent for Tech-care chatbot. Determine whether the user's technical query contains both product and issue details.
+        
+        User: {user_message}
+        Response:
+        """
+        response = call_llm(prompt)
+        return response.strip()
+
+    def extract_product_issue(self, user_message: str) -> dict:
+        prompt = f"""
+        You are a supporting agent for Tech-care chatbot. Extract the product and issue from the given technical query.
+        Select the product from the following list: {', '.join(self.product_list)}.
+        
+        User: {user_message}
+        Response:
+        """
+        response = call_llm(prompt)
+        return response.strip()
+
+    def generate_combined_query(self) -> str:
+        prompt = f"""
+        You are a supporting agent for Tech-care chatbot. Consolidate the chat history into a single, clear technical query.
+        
+        Chat history:
+        {self.chat_history}
+        
+        Consolidated message:
+        """
+        response = call_llm(prompt)
+        return response.strip()
+
+    def handle_user_message(self, user_message: str) -> dict:
+        self.chat_history.append(f"User: {user_message}")
+        
+        flag_data = self.determine_flag_followup(user_message)
+        
+        if flag_data["flag"] == "complete":
+            product_issue_data = self.extract_product_issue(user_message)
+            return {"product": product_issue_data["product"], "issue": product_issue_data["issue"], "message": "Thank you for providing the details, let me search the answer."}
+        
+        if self.attempts < 2:
+            self.attempts += 1
+            follow_up = flag_data["follow_up_message"]
+            self.chat_history.append(f"Bot: {follow_up}")
+            return {"product": None, "issue": None, "message": follow_up}
+        
+        consolidated_query = self.generate_combined_query()
+        product_issue_data = self.extract_product_issue(consolidated_query)
+        return {"product": product_issue_data.get("product"), "issue": product_issue_data.get("issue"), "message": "Unable to determine the product and issue after multiple attempts."}
