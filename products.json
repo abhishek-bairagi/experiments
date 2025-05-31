@@ -1,0 +1,808 @@
+[
+    {
+        "product_id": "p1",
+        "name": "Slack",
+        "category": "Communication",
+        "vendor": "Slack Technologies",
+        "subtopics": [
+            {
+                "subtopic_id": "st1",
+                "name": "Audio",
+                "issues": [
+                    {
+                        "issue_id": "i1",
+                        "title": "No sound during calls",
+                        "description": "Users experience no audio in Slack calls.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc1",
+                                "description": "Microphone muted",
+                                "probability": 0.7
+                            },
+                            {
+                                "cause_id": "rc2",
+                                "description": "Audio device not selected",
+                                "probability": 0.3
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss1",
+                                "description": "Unmute your microphone.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss2",
+                                "description": "Select correct audio device in settings.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a1",
+                                "title": "How to fix no sound in Slack calls",
+                                "summary": "Step-by-step guide to troubleshoot audio issues.",
+                                "url": "https://help.company.com/slack-audio-fix"
+                            }
+                        ]
+                    },
+                    {
+                        "issue_id": "i2",
+                        "title": "Echo during Slack calls",
+                        "description": "Users report echo or feedback during calls.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc3",
+                                "description": "Microphone picking up speaker output",
+                                "probability": 0.85
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss3",
+                                "description": "Use headphones instead of speakers.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss4",
+                                "description": "Mute yourself when not speaking.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a2",
+                                "title": "Resolving echo issues in Slack calls",
+                                "summary": "Common causes and fixes for echo.",
+                                "url": "https://help.company.com/slack-echo"
+                            }
+                        ]
+                    },
+                    {
+                        "issue_id": "i3",
+                        "title": "Calls drop frequently",
+                        "description": "Slack calls disconnect unexpectedly.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc4",
+                                "description": "Poor network connectivity",
+                                "probability": 0.9
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss5",
+                                "description": "Check your internet connection.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss6",
+                                "description": "Switch to a wired connection if possible.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a3",
+                                "title": "How to troubleshoot dropped Slack calls",
+                                "summary": "Improve call stability by following these steps.",
+                                "url": "https://help.company.com/slack-dropped-calls"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st2",
+                "name": "Messaging",
+                "issues": [
+                    {
+                        "issue_id": "i4",
+                        "title": "Messages not sending",
+                        "description": "Users cannot send messages in channels.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc5",
+                                "description": "Network issues",
+                                "probability": 0.6
+                            },
+                            {
+                                "cause_id": "rc6",
+                                "description": "User permissions restricted",
+                                "probability": 0.4
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss7",
+                                "description": "Check your network connection.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss8",
+                                "description": "Verify your channel permissions.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a4",
+                                "title": "Troubleshooting message sending failures in Slack",
+                                "summary": "How to resolve messaging issues.",
+                                "url": "https://help.company.com/slack-messages"
+                            }
+                        ]
+                    },
+                    {
+                        "issue_id": "i5",
+                        "title": "Delayed message notifications",
+                        "description": "Notifications arrive late or inconsistently.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc7",
+                                "description": "Do Not Disturb mode enabled",
+                                "probability": 0.5
+                            },
+                            {
+                                "cause_id": "rc8",
+                                "description": "App in background with restricted notifications",
+                                "probability": 0.5
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss9",
+                                "description": "Disable Do Not Disturb mode.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss10",
+                                "description": "Allow Slack to send notifications in background.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a5",
+                                "title": "Fix delayed notifications in Slack",
+                                "summary": "Guide to resolve notification delays.",
+                                "url": "https://help.company.com/slack-notifications"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st3",
+                "name": "Authentication",
+                "issues": [
+                    {
+                        "issue_id": "i6",
+                        "title": "Password reset fails",
+                        "description": "Users cannot reset their Slack password.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc9",
+                                "description": "Password policy violation",
+                                "probability": 0.7
+                            },
+                            {
+                                "cause_id": "rc10",
+                                "description": "Active Directory sync delay",
+                                "probability": 0.3
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss11",
+                                "description": "Ensure password meets policy requirements.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss12",
+                                "description": "Wait for AD sync to complete or contact IT.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a6",
+                                "title": "How to reset your Slack password",
+                                "summary": "Steps to successfully reset password.",
+                                "url": "https://help.company.com/slack-password-reset"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "product_id": "p2",
+        "name": "Webex",
+        "category": "Video Conferencing",
+        "vendor": "Cisco",
+        "subtopics": [
+            {
+                "subtopic_id": "st4",
+                "name": "Meetings",
+                "issues": [
+                    {
+                        "issue_id": "i7",
+                        "title": "Webex meeting audio echo",
+                        "description": "Echo heard by participants during meetings.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc11",
+                                "description": "Mic picking up speaker output",
+                                "probability": 0.8
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss13",
+                                "description": "Use headphones instead of speakers.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss14",
+                                "description": "Mute microphone when not speaking.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a7",
+                                "title": "Fix echo in Webex meetings",
+                                "summary": "Guide to resolve echo issues in Webex.",
+                                "url": "https://help.company.com/webex-echo"
+                            }
+                        ]
+                    },
+                    {
+                        "issue_id": "i8",
+                        "title": "Webex meeting connection drops",
+                        "description": "Users lose connection during meetings.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc12",
+                                "description": "Network instability",
+                                "probability": 0.85
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss15",
+                                "description": "Check internet connection.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss16",
+                                "description": "Switch to wired connection if possible.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a8",
+                                "title": "Troubleshoot Webex connection drops",
+                                "summary": "Steps to improve meeting connection stability.",
+                                "url": "https://help.company.com/webex-connection"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st5",
+                "name": "Authentication",
+                "issues": [
+                    {
+                        "issue_id": "i9",
+                        "title": "Cannot reset Webex password",
+                        "description": "Password reset fails for Webex users.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc13",
+                                "description": "Incorrect email linked",
+                                "probability": 0.5
+                            },
+                            {
+                                "cause_id": "rc14",
+                                "description": "Temporary system outage",
+                                "probability": 0.5
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss17",
+                                "description": "Verify registered email address.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss18",
+                                "description": "Wait for system recovery or contact support.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a9",
+                                "title": "Webex password reset troubleshooting",
+                                "summary": "Help with password reset failures.",
+                                "url": "https://help.company.com/webex-password-reset"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st6",
+                "name": "Scheduling",
+                "issues": [
+                    {
+                        "issue_id": "i10",
+                        "title": "Meeting invite not received",
+                        "description": "Users do not get Webex meeting invitations.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc15",
+                                "description": "Spam filter blocking invites",
+                                "probability": 0.6
+                            },
+                            {
+                                "cause_id": "rc16",
+                                "description": "Incorrect email address",
+                                "probability": 0.4
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss19",
+                                "description": "Check spam/junk folder.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss20",
+                                "description": "Verify invite email address.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a10",
+                                "title": "Webex meeting invite troubleshooting",
+                                "summary": "How to handle missing invites.",
+                                "url": "https://help.company.com/webex-invite"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "product_id": "p3",
+        "name": "Outlook",
+        "category": "Email & Calendar",
+        "vendor": "Microsoft",
+        "subtopics": [
+            {
+                "subtopic_id": "st7",
+                "name": "Email",
+                "issues": [
+                    {
+                        "issue_id": "i11",
+                        "title": "Unable to send email",
+                        "description": "Emails fail to send from Outlook.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc17",
+                                "description": "SMTP server issues",
+                                "probability": 0.8
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss21",
+                                "description": "Check SMTP server settings.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss22",
+                                "description": "Restart Outlook application.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a11",
+                                "title": "Troubleshooting email sending in Outlook",
+                                "summary": "Fixes for email sending errors.",
+                                "url": "https://help.company.com/outlook-email-send"
+                            }
+                        ]
+                    },
+                    {
+                        "issue_id": "i12",
+                        "title": "Emails stuck in Outbox",
+                        "description": "Messages remain unsent in Outbox folder.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc18",
+                                "description": "Network connectivity issues",
+                                "probability": 0.6
+                            },
+                            {
+                                "cause_id": "rc19",
+                                "description": "Corrupted Outlook profile",
+                                "probability": 0.4
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss23",
+                                "description": "Check internet connection.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss24",
+                                "description": "Create a new Outlook profile.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a12",
+                                "title": "Fixing emails stuck in Outbox",
+                                "summary": "Guide to clear Outbox issues.",
+                                "url": "https://help.company.com/outlook-outbox"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st8",
+                "name": "Calendar",
+                "issues": [
+                    {
+                        "issue_id": "i13",
+                        "title": "Calendar not syncing",
+                        "description": "Outlook calendar events do not sync.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc20",
+                                "description": "Sync service disabled",
+                                "probability": 0.7
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss25",
+                                "description": "Enable calendar sync service.",
+                                "order": 1
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a13",
+                                "title": "Outlook calendar sync issues",
+                                "summary": "Fix calendar syncing problems.",
+                                "url": "https://help.company.com/outlook-calendar"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st9",
+                "name": "Authentication",
+                "issues": [
+                    {
+                        "issue_id": "i14",
+                        "title": "Password reset issue",
+                        "description": "Outlook password reset not working.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc21",
+                                "description": "Policy restrictions",
+                                "probability": 0.6
+                            },
+                            {
+                                "cause_id": "rc22",
+                                "description": "Service outage",
+                                "probability": 0.4
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss26",
+                                "description": "Check policy guidelines.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss27",
+                                "description": "Contact support for outage info.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a14",
+                                "title": "Outlook password reset troubleshooting",
+                                "summary": "Resolve password reset problems.",
+                                "url": "https://help.company.com/outlook-password"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "product_id": "p4",
+        "name": "Jira",
+        "category": "Project Management",
+        "vendor": "Atlassian",
+        "subtopics": [
+            {
+                "subtopic_id": "st10",
+                "name": "Issue Tracking",
+                "issues": [
+                    {
+                        "issue_id": "i15",
+                        "title": "Cannot create new issue",
+                        "description": "Users unable to create issues in Jira.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc23",
+                                "description": "Permission restrictions",
+                                "probability": 0.8
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss28",
+                                "description": "Verify user permissions.",
+                                "order": 1
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a15",
+                                "title": "Troubleshooting Jira issue creation",
+                                "summary": "Guide to resolve creation errors.",
+                                "url": "https://help.company.com/jira-issue-create"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st11",
+                "name": "Notifications",
+                "issues": [
+                    {
+                        "issue_id": "i16",
+                        "title": "Notification emails not received",
+                        "description": "Users don't get Jira notification emails.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc24",
+                                "description": "Email blocked by spam filter",
+                                "probability": 0.7
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss29",
+                                "description": "Check spam folder.",
+                                "order": 1
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a16",
+                                "title": "Fix Jira notification email issues",
+                                "summary": "How to get Jira emails delivered.",
+                                "url": "https://help.company.com/jira-notifications"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st12",
+                "name": "Authentication",
+                "issues": [
+                    {
+                        "issue_id": "i17",
+                        "title": "Jira login fails",
+                        "description": "Users cannot log in to Jira.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc25",
+                                "description": "Incorrect credentials",
+                                "probability": 0.7
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss30",
+                                "description": "Reset password.",
+                                "order": 1
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a17",
+                                "title": "Jira login troubleshooting",
+                                "summary": "Steps to fix login problems.",
+                                "url": "https://help.company.com/jira-login"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "product_id": "p5",
+        "name": "Zoom",
+        "category": "Video Conferencing",
+        "vendor": "Zoom Video Communications",
+        "subtopics": [
+            {
+                "subtopic_id": "st13",
+                "name": "Video",
+                "issues": [
+                    {
+                        "issue_id": "i18",
+                        "title": "Video not loading",
+                        "description": "Zoom video feed fails to load.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc26",
+                                "description": "Outdated app version",
+                                "probability": 0.6
+                            },
+                            {
+                                "cause_id": "rc27",
+                                "description": "Hardware acceleration issues",
+                                "probability": 0.4
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss31",
+                                "description": "Update Zoom to latest version.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss32",
+                                "description": "Disable hardware acceleration.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a18",
+                                "title": "Fix video loading issues in Zoom",
+                                "summary": "Guide to resolve video feed problems.",
+                                "url": "https://help.company.com/zoom-video"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st14",
+                "name": "Audio",
+                "issues": [
+                    {
+                        "issue_id": "i19",
+                        "title": "No audio on Zoom calls",
+                        "description": "Users cannot hear audio on Zoom calls.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc28",
+                                "description": "Muted microphone",
+                                "probability": 0.5
+                            },
+                            {
+                                "cause_id": "rc29",
+                                "description": "Audio device not selected",
+                                "probability": 0.5
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss33",
+                                "description": "Unmute your microphone.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss34",
+                                "description": "Select the correct audio device.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a19",
+                                "title": "Troubleshooting no audio in Zoom calls",
+                                "summary": "Fix audio issues step-by-step.",
+                                "url": "https://help.company.com/zoom-audio"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subtopic_id": "st15",
+                "name": "Authentication",
+                "issues": [
+                    {
+                        "issue_id": "i20",
+                        "title": "Zoom password reset problem",
+                        "description": "Password reset link not working.",
+                        "root_causes": [
+                            {
+                                "cause_id": "rc30",
+                                "description": "Expired reset link",
+                                "probability": 0.6
+                            },
+                            {
+                                "cause_id": "rc31",
+                                "description": "Email delivery failure",
+                                "probability": 0.4
+                            }
+                        ],
+                        "solution_steps": [
+                            {
+                                "step_id": "ss35",
+                                "description": "Request a new password reset link.",
+                                "order": 1
+                            },
+                            {
+                                "step_id": "ss36",
+                                "description": "Check your email spam folder.",
+                                "order": 2
+                            }
+                        ],
+                        "articles": [
+                            {
+                                "article_id": "a20",
+                                "title": "Fix Zoom password reset issues",
+                                "summary": "How to get a working reset link.",
+                                "url": "https://help.company.com/zoom-password"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
+
