@@ -1,0 +1,1320 @@
+{
+    "products": [
+    {
+        "id": "prod1",
+        "name": "Webex",
+        "alias": ["Cisco Webex", "Webex Meetings", "Webex Teams"]
+    },
+    {
+        "id": "prod2",
+        "name": "Outlook",
+        "alias": ["Microsoft Outlook", "Outlook Email", "MS Outlook"]
+    },
+    {
+        "id": "prod3",
+        "name": "Slack",
+        "alias": ["Slack App", "Slack Chat", "Slack Messaging"]
+    },
+    {
+        "id": "prod4",
+        "name": "BYOD",
+        "alias": ["Bring Your Own Device", "Personal Devices", "BYOD Policy"]
+    },
+    {
+        "id": "prod5",
+        "name": "Windows",
+        "alias": ["Microsoft Windows", "Windows OS", "Win10", "Win11"]
+    },
+    {
+      "id": "prod6",
+      "name": "Zoom",
+      "alias": ["Zoom Meetings", "Zoom Video Conferencing", "Zoom App"]
+    }
+    ],
+    "subtopics": [
+        {
+          "id": "sub1",
+          "name": "Meeting Scheduling",
+          "alias": ["Schedule Meeting", "Create Meeting", "Set up Meeting"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub2",
+          "name": "Audio Issues",
+          "alias": ["No Sound", "Audio Not Working", "Microphone Problems"],
+            "Constraints": "Requires compatible audio drivers",
+            "Access": "All users",
+            "Common_Issues": ["No sound output", "Microphone not detected", "Audio dropouts"]
+          }
+        ,
+        {
+          "id": "sub3",
+          "name": "Screen Sharing",
+          "alias": ["Share Screen", "Screen Share", "Present Screen"],
+            "Constraints": "Admin permissions required for some platforms",
+            "Access": "Corporate devices only",
+            "Common_Issues": ["Screen share button disabled", "Permission errors", "Graphics driver issues"]
+          }
+        ,
+        {
+          "id": "sub4",
+          "name": "Calendar Sync",
+          "alias": ["Sync Calendar", "Calendar Integration", "Outlook Calendar Sync"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub5",
+          "name": "Login Problems",
+          "alias": ["Cannot Login", "Sign-In Issues", "Login Failed"],
+            "Constraints": "Account lockout after multiple failed attempts",
+            "Access": "Active accounts only",
+            "Common_Issues": ["Invalid credentials", "Account locked", "Password expired"]
+          }
+        ,
+        {
+          "id": "sub6",
+          "name": "Email Configuration",
+          "alias": ["Setup Email", "Configure Outlook", "Email Settings"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub7",
+          "name": "Notifications",
+          "alias": ["Email Alerts", "Popup Notifications", "Outlook Notifications"],
+            "Constraints": "Battery optimization settings may block notifications",
+            "Access": "All users",
+            "Common_Issues": ["Missing notifications", "Too frequent alerts", "Notification settings reset"]
+          }
+        ,
+        {
+          "id": "sub8",
+          "name": "Message Threads",
+          "alias": ["Threaded Messages", "Replies", "Message Replies"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub9",
+          "name": "Workspace Management",
+          "alias": ["Manage Workspaces", "Channels", "Slack Spaces"],
+            "Constraints": "Admin role required for channel creation",
+            "Access": "Workspace members only",
+            "Common_Issues": ["Unable to create channels", "Role permission errors", "Workspace settings misconfigured"]
+          }
+        ,
+        {
+          "id": "sub10",
+          "name": "App Integration",
+          "alias": ["Connect Apps", "Third-Party Apps", "Integrate Tools"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub11",
+          "name": "Device Registration",
+          "alias": ["Register Device", "Add Device", "Enroll Device"],
+            "Constraints": "Device must meet security compliance",
+            "Access": "Corporate accounts only",
+            "Common_Issues": ["Registration failures", "Device not recognized", "Network restrictions"]
+          }
+        ,
+        {
+          "id": "sub12",
+          "name": "Security Compliance",
+          "alias": ["Security Policy", "BYOD Security", "Compliance Rules"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub13",
+          "name": "Network Access",
+          "alias": ["WiFi Access", "VPN", "Access Network"],
+            "Constraints": "VPN required for remote access",
+            "Access": "Authorized users only",
+            "Common_Issues": ["VPN connection fails", "Network authentication errors", "Firewall restrictions"]
+          }
+        ,
+        {
+          "id": "sub14",
+          "name": "OS Updates",
+          "alias": ["System Update", "Windows Update", "Upgrade OS"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub15",
+          "name": "Driver Issues",
+          "alias": ["Missing Drivers", "Driver Update", "Install Drivers"],
+            "Constraints": "Requires admin privileges for installation",
+            "Access": "All users",
+            "Common_Issues": ["Missing drivers", "Driver update failures", "Incompatible drivers"]
+          }
+        ,
+        {
+          "id": "sub16",
+          "name": "Blue Screen Errors",
+          "alias": ["BSOD", "Crash Screen", "Blue Screen of Death"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub17",
+          "name": "Performance Optimization",
+          "alias": ["Slow System", "Speed Up PC", "Improve Performance"],
+            "Constraints": "Requires sufficient disk space and RAM",
+            "Access": "All users",
+            "Common_Issues": ["System lag", "High CPU usage", "Low disk space"]
+          }
+        ,
+        {
+          "id": "sub18",
+          "name": "Webinar - Zoom",
+          "alias": ["Zoom Webinar", "Hosting Zoom Webinar", "Zoom Events"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub19",
+          "name": "Meetings - Zoom",
+          "alias": ["Zoom Meetings", "Zoom Collaboration", "Zoom Calls"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ""
+          }
+        ,
+        {
+          "id": "sub20",
+          "name": "Webinar - Webex",
+          "alias": ["Webex Webinar", "Hosting Webex Webinar", "Webex Events"],
+            "Constraints": "Band 45 or above",
+            "Access": "Full-time employees",
+            "Common_Issues": [
+              "Audio dropouts",
+              "sInvite errors",
+              "Permissions problems"
+            ]
+          
+        },
+        {
+          "id": "sub21",
+          "name": "Outlook Mail",
+          "alias": ["Outlook Email", "Microsoft Mail", "Email Client"],
+            "Constraints": "",
+            "Access": "All users",
+            "Common_Issues": ["Mail delivery delays", "Sync errors", "Mailbox size limits"]
+          },
+          {
+            "id": "sub22",
+            "name": "Slack Bot",
+            "alias": ["Bot Issues", "Slack Bot Problems", "Unresponsive Bots"],
+            "Constraints": "Requires workspace admin access for bot configuration",
+            "Access": "Workspace members only",
+            "Common_Issues": ["Bot not responding", "API token expired", "Permission errors"]
+          },
+          {
+            "id": "sub23",
+            "name": "Notification Management",
+            "alias": ["Manage Notifications", "Notification Settings", "Slack Alerts"],
+            "Constraints": "",
+            "Access": "",
+            "Common_Issues": ["Notifications are too frequent", "Notification settings reset", "Missing notifications"]
+          }
+
+      ],
+
+    "issues": [
+        {
+            "id": "issue1",
+            "description": "Can't schedule meeting",
+            "keywords": [
+                "schedule",
+                "meeting",
+                "not working"
+            ],
+            "embedding": [],
+            "frequency": 34,
+            "severity": "med"
+        },
+
+        {
+            "id": "issue2",
+            "description": "Meeting not showing on calendar",
+            "keywords": [
+                "meeting",
+                "calendar",
+                "missing"
+            ],
+            "embedding": [],
+            "frequency": 21,
+            "severity": "low"
+        },
+        {
+            "id": "issue3",
+            "description": "No audio during call",
+            "keywords": [
+                "audio",
+                "call",
+                "sound",
+                "mute"
+            ],
+            "embedding": [],
+            "frequency": 77,
+            "severity": "high"
+        },
+        {
+            "id": "issue4",
+            "description": "Microphone not detected",
+            "keywords": [
+                "microphone",
+                "input",
+                "audio",
+                "device"
+            ],
+            "embedding": [],
+            "frequency": 50,
+            "severity": "med"
+        },
+        {
+            "id": "issue5",
+            "description": "Unable to share screen",
+            "keywords": [
+                "screen",
+                "share",
+                "disabled"
+            ],
+            "embedding": [],
+            "frequency": 11,
+            "severity": "high"
+        },
+        {
+            "id": "issue6",
+            "description": "Calendar not syncing with Outlook",
+            "keywords": [
+                "calendar",
+                "sync",
+                "outlook"
+            ],
+            "embedding": [],
+            "frequency": 51,
+            "severity": "med"
+        },
+        {
+            "id": "issue7",
+            "description": "Invalid login credentials",
+            "keywords": [
+                "login",
+                "failed",
+                "credentials"
+            ],
+            "embedding": [],
+            "frequency": 19,
+            "severity": "high"
+        },
+        {
+            "id": "issue8",
+            "description": "Account locked after multiple attempts",
+            "keywords": [
+                "locked",
+                "account",
+                "sign-in"
+            ],
+            "embedding": [],
+            "frequency": 64,
+            "severity": "high"
+        },
+        {
+            "id": "issue9",
+            "description": "Cannot configure email",
+            "keywords": [
+                "email",
+                "configure",
+                "settings"
+            ],
+            "embedding": [],
+            "frequency": 44,
+            "severity": "med"
+        },
+        {
+            "id": "issue10",
+            "description": "Not receiving notifications",
+            "keywords": [
+                "notifications",
+                "missing",
+                "alerts"
+            ],
+            "embedding": [],
+            "frequency": 20,
+            "severity": "low"
+        },
+        {
+            "id": "issue11",
+            "description": "Replies not threading correctly",
+            "keywords": [
+                "thread",
+                "reply",
+                "message"
+            ],
+            "embedding": [],
+            "frequency": 82,
+            "severity": "low"
+        },
+        {
+            "id": "issue12",
+            "description": "Can't create new channel",
+            "keywords": [
+                "channel",
+                "create",
+                "workspace"
+            ],
+            "embedding": [],
+            "frequency": 97,
+            "severity": "med"
+        },
+        {
+            "id": "issue13",
+            "description": "App integration failing",
+            "keywords": [
+                "integration",
+                "apps",
+                "connect"
+            ],
+            "embedding": [],
+            "frequency": 54,
+            "severity": "med"
+        },
+        {
+            "id": "issue14",
+            "description": "Device registration fails",
+            "keywords": [
+                "device",
+                "register",
+                "fail"
+            ],
+            "embedding": [],
+            "frequency": 11,
+            "severity": "high"
+        },
+        {
+            "id": "issue15",
+            "description": "Non-compliant device blocked",
+            "keywords": [
+                "compliance",
+                "device",
+                "blocked"
+            ],
+            "embedding": [],
+            "frequency": 81,
+            "severity": "high"
+        },
+        {
+            "id": "issue16",
+            "description": "VPN connection fails",
+            "keywords": [
+                "VPN",
+                "connect",
+                "network"
+            ],
+            "embedding": [],
+            "frequency": 34,
+            "severity": "high"
+        },
+        {
+            "id": "issue17",
+            "description": "Windows update stuck",
+            "keywords": [
+                "update",
+                "windows",
+                "stuck"
+            ],
+            "embedding": [],
+            "frequency": 77,
+            "severity": "med"
+        },
+        {
+            "id": "issue18",
+            "description": "Missing audio driver",
+            "keywords": [
+                "driver",
+                "audio",
+                "missing"
+            ],
+            "embedding": [],
+            "frequency": 74,
+            "severity": "med"
+        },
+        {
+            "id": "issue19",
+            "description": "Frequent blue screen error",
+            "keywords": [
+                "blue screen",
+                "crash",
+                "error"
+            ],
+            "embedding": [],
+            "frequency": 81,
+            "severity": "high"
+        },
+        {
+            "id": "issue20",
+            "description": "System is too slow",
+            "keywords": [
+                "performance",
+                "slow",
+                "optimize"
+            ],
+            "embedding": [],
+            "frequency": 73,
+            "severity": "med"
+        },
+        {
+            "id": "issue21",
+            "description": "Emails are delayed",
+            "keywords": [
+                "email",
+                "delayed",
+                "outbox"
+            ],
+            "embedding": [],
+            "frequency": 86,
+            "severity": "med"
+        },
+        {
+            "id": "issue22",
+            "description": "Cannot access shared mailbox",
+            "keywords": [
+                "shared",
+                "mailbox",
+                "access"
+            ],
+            "embedding": [],
+            "frequency": 30,
+            "severity": "high"
+        },
+        {
+            "id": "issue23",
+            "description": "Inbox rules not applying",
+            "keywords": [
+                "rules",
+                "inbox",
+                "email"
+            ],
+            "embedding": [],
+            "frequency": 62,
+            "severity": "low"
+        },
+        {
+            "id": "issue24",
+            "description": "Slack bot not responding",
+            "keywords": [
+                "slack",
+                "bot",
+                "unresponsive"
+            ],
+            "embedding": [],
+            "frequency": 60,
+            "severity": "low"
+        },
+        {
+            "id": "issue25",
+            "description": "Cannot change user roles",
+            "keywords": [
+                "slack",
+                "permissions",
+                "roles"
+            ],
+            "embedding": [],
+            "frequency": 38,
+            "severity": "med"
+        },
+        {
+            "id": "issue26",
+            "description": "Notifications are too frequent",
+            "keywords": [
+                "notifications",
+                "slack",
+                "spam"
+            ],
+            "embedding": [],
+            "frequency": 97,
+            "severity": "low"
+        },
+        {
+          "id": "issue27",
+          "description": "Unable to host a webinar in Webex",
+          "keywords": [
+            "webex",
+            "webinar",
+            "host",
+            "permissions"
+          ],
+          "embedding": [],
+          "frequency": 45,
+          "severity": "med"
+        },
+        {
+          "id": "issue28",
+          "description": "I’m not receiving mails in Outlook",
+          "keywords": [
+            "Outlook",
+            "mail",
+            "not receiving"
+          ],
+          "embedding": [],
+          "frequency": 10,
+          "severity": "low"
+        },
+        {
+          "id": "issue29",
+          "description": "Background echo during calls",
+          "keywords": [
+            "echo",
+            "background",
+            "audio",
+            "calls"
+          ],
+          "embedding": [],
+          "frequency": 0,
+          "severity": "low"
+        },
+        {
+          "id": "issue30",
+          "description": "Noise interference during calls",
+          "keywords": ["noise", "interference", "calls"],
+          "embedding": [],
+          "frequency": 0,
+          "severity": "low"
+        }
+    ],
+    "product-subtopic-relationships": [
+        { "from": "prod1", "to": "sub1", "relation": "has_subtopic" },
+        { "from": "prod1", "to": "sub2", "relation": "has_subtopic" },
+        { "from": "prod1", "to": "sub3", "relation": "has_subtopic" },
+        { "from": "prod1", "to": "sub4", "relation": "has_subtopic" },
+      
+        { "from": "prod2", "to": "sub4", "relation": "has_subtopic" },
+        { "from": "prod2", "to": "sub5", "relation": "has_subtopic" },
+        { "from": "prod2", "to": "sub6", "relation": "has_subtopic" },
+        { "from": "prod2", "to": "sub7", "relation": "has_subtopic" },
+        { "from": "prod2", "to": "sub18", "relation": "has_subtopic" },
+        { "from": "prod2", "to": "sub19", "relation": "has_subtopic" },
+        { "from": "prod2", "to": "sub20", "relation": "has_subtopic" },
+      
+        { "from": "prod3", "to": "sub8", "relation": "has_subtopic" },
+        { "from": "prod3", "to": "sub9", "relation": "has_subtopic" },
+        { "from": "prod3", "to": "sub10", "relation": "has_subtopic" },
+        { "from": "prod3", "to": "sub22", "relation": "has_subtopic" },
+        { "from": "prod3", "to": "sub23", "relation": "has_subtopic" },
+      
+        { "from": "prod4", "to": "sub11", "relation": "has_subtopic" },
+        { "from": "prod4", "to": "sub12", "relation": "has_subtopic" },
+        { "from": "prod4", "to": "sub13", "relation": "has_subtopic" },
+      
+        { "from": "prod5", "to": "sub14", "relation": "has_subtopic" },
+        { "from": "prod5", "to": "sub15", "relation": "has_subtopic" },
+        { "from": "prod5", "to": "sub16", "relation": "has_subtopic" },
+        { "from": "prod5", "to": "sub17", "relation": "has_subtopic" },
+        { "from": "prod6", "to": "sub18", "relation": "has_subtopic" },
+        { "from": "prod6", "to": "sub19", "relation": "has_subtopic" },
+        { "from": "prod1", "to": "sub20", "relation": "has_subtopic" },
+        { "from": "prod2", "to": "sub21", "relation": "has_subtopic" }
+      ],
+      "subtopic-issue-relationships": [
+        { "from": "sub1", "to": "issue1", "relation": "has_issue" },
+        { "from": "sub1", "to": "issue2", "relation": "has_issue" },
+        
+        { "from": "sub2", "to": "issue3", "relation": "has_issue" },
+        { "from": "sub2", "to": "issue4", "relation": "has_issue" },
+        { "from": "sub2", "to": "issue29", "relation": "has_issue" },
+      
+        { "from": "sub3", "to": "issue5", "relation": "has_issue" },
+      
+        { "from": "sub4", "to": "issue6", "relation": "has_issue" },
+      
+        { "from": "sub5", "to": "issue7", "relation": "has_issue" },
+        { "from": "sub5", "to": "issue8", "relation": "has_issue" },
+      
+        { "from": "sub6", "to": "issue9", "relation": "has_issue" },
+      
+        { "from": "sub7", "to": "issue10", "relation": "has_issue" },
+        { "from": "sub23", "to": "issue26", "relation": "has_issue" },
+      
+        { "from": "sub8", "to": "issue11", "relation": "has_issue" },
+      
+        { "from": "sub9", "to": "issue12", "relation": "has_issue" },
+      
+        { "from": "sub10", "to": "issue13", "relation": "has_issue" },
+      
+        { "from": "sub11", "to": "issue14", "relation": "has_issue" },
+      
+        { "from": "sub12", "to": "issue15", "relation": "has_issue" },
+      
+        { "from": "sub13", "to": "issue16", "relation": "has_issue" },
+      
+        { "from": "sub14", "to": "issue17", "relation": "has_issue" },
+      
+        { "from": "sub15", "to": "issue18", "relation": "has_issue" },
+      
+        { "from": "sub16", "to": "issue19", "relation": "has_issue" },
+      
+        { "from": "sub17", "to": "issue20", "relation": "has_issue" },
+      
+        { "from": "sub18", "to": "issue21", "relation": "has_issue" },
+      
+        { "from": "sub19", "to": "issue22", "relation": "has_issue" },
+      
+        { "from": "sub20", "to": "issue23", "relation": "has_issue" },
+      
+        { "from": "sub22", "to": "issue24", "relation": "has_issue" },
+      
+        { "from": "sub22", "to": "issue25", "relation": "has_issue" },
+        { "from": "sub20", "to": "issue27", "relation": "has_issue" },
+        { "from": "sub21", "to": "issue28", "relation": "has_issue" },
+        { "from": "sub2", "to": "issue30", "relation": "has_issue" }
+      ],
+    "users": [
+        {"id": "user1", "name": "Alice", "email": "alice@example.com", "location": "Canada", "band": 40, "team": "DW"},
+        {"id": "user2", "name": "Bob", "email": "bob@example.com", "location": "India", "band": 60, "team": "GSG"},
+        {"id": "user3", "name": "Charlie", "email": "charlie@example.com", "location": "Germany", "band": 45, "team": "CETS"},
+        {"id": "user4", "name": "Diana", "email": "diana@example.com", "location": "USA", "band": 40, "team": "CCP"},
+        {"id": "user5", "name": "Ethan", "email": "ethan@example.com", "location": "USA", "band": 30, "team": "CCP"},
+        {"id": "user6", "name": "Fiona", "email": "fiona@example.com", "location": "India", "band": 30, "team": "CFR"},
+        {"id": "user7", "name": "George", "email": "george@example.com", "location": "India", "band": 55, "team": "CFR"},
+        {"id": "user8", "name": "Hannah", "email": "hannah@example.com", "location": "India", "band": 60, "team": "CCP"},
+        {"id": "user9", "name": "Ivan", "email": "ivan@example.com", "location": "India", "band": 35, "team": "CFR"},
+        {"id": "user10", "name": "Julia", "email": "julia@example.com", "location": "UK", "band": 50, "team": "GSG"},
+        {
+          "id": "user11",
+          "name": "Abhishek Bairagi",
+          "email": "abhishek.bairagi@example.com",
+          "location": "India",
+          "band": 30,
+          "team": "DW"
+        }
+      ],
+    "devices": [
+      {
+      "id": "dev1",
+      "os": "macos",
+      "lastupdate": "2025-05-05T21:29:14.482091",
+      "os_version": "14.2",
+      "ram": 8,
+      "storage": 1024,
+      "model": "MacBook Air M1",
+      "issued_on": "2025-04-30T21:29:14.482113",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev2",
+      "os": "windows",
+      "lastupdate": "2025-05-21T21:29:14.482121",
+      "os_version": "11.0.22621",
+      "ram": 16,
+      "storage": 128,
+      "model": "Surface Pro 9",
+      "issued_on": "2025-05-20T21:29:14.482129",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev3",
+      "os": "windows",
+      "lastupdate": "2025-06-06T21:29:14.482134",
+      "os_version": "10.0.19045",
+      "ram": 32,
+      "storage": 128,
+      "model": "Dell XPS 13",
+      "issued_on": "2025-05-08T21:29:14.482140",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev4",
+      "os": "windows",
+      "lastupdate": "2025-05-27T21:29:14.482145",
+      "os_version": "11.0.22000",
+      "ram": 16,
+      "storage": 256,
+      "model": "Dell XPS 13",
+      "issued_on": "2025-01-06T21:29:14.482162",
+      "pending_updates": ["system update"]
+      },
+      {
+      "id": "dev5",
+      "os": "macos",
+      "lastupdate": "2025-05-06T21:29:14.482183",
+      "os_version": "14.2",
+      "ram": 32,
+      "storage": 256,
+      "model": "iMac 2023",
+      "issued_on": "2025-02-19T21:29:14.482194",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev6",
+      "os": "macos",
+      "lastupdate": "2025-06-03T21:29:14.482201",
+      "os_version": "14.0",
+      "ram": 4,
+      "storage": 128,
+      "model": "MacBook Air M1",
+      "issued_on": "2025-04-17T21:29:14.482207",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev7",
+      "os": "ios",
+      "lastupdate": "2025-05-20T21:29:14.482212",
+      "os_version": "16.4",
+      "ram": 32,
+      "storage": 1024,
+      "model": "iPad Pro",
+      "issued_on": "2024-07-01T21:29:14.482217",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev8",
+      "os": "windows",
+      "lastupdate": "2025-04-12T21:29:14.482222",
+      "os_version": "11.0.22000",
+      "ram": 4,
+      "storage": 128,
+      "model": "Dell XPS 13",
+      "issued_on": "2025-05-11T21:29:14.482227",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev9",
+      "os": "ios",
+      "lastupdate": "2025-05-31T21:29:14.482231",
+      "os_version": "17.3",
+      "ram": 8,
+      "storage": 256,
+      "model": "iPad Pro",
+      "issued_on": "2025-04-04T21:29:14.482237",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev10",
+      "os": "ios",
+      "lastupdate": "2025-06-02T21:29:14.482241",
+      "os_version": "16.4",
+      "ram": 16,
+      "storage": 256,
+      "model": "iPad Pro",
+      "issued_on": "2024-11-03T21:29:14.482246",
+      "pending_updates": ""
+      },
+      {
+      "id": "dev11",
+      "os": "macos",
+      "lastupdate": "2025-06-10T21:29:14.482091",
+      "os_version": "14.3",
+      "ram": 16,
+      "storage": 512,
+      "model": "MacBook Pro M2",
+      "issued_on": "2025-06-09T21:29:14.482113",
+      "pending_updates": ["audio driver - mac", "slack"]
+      }
+    ],
+    "user-device-relationships": [
+        {"from": "user1", "to": "dev1", "relation": "has_device"},
+        {"from": "user2", "to": "dev2", "relation": "has_device"},
+        {"from": "user3", "to": "dev3", "relation": "has_device"},
+        {"from": "user4", "to": "dev4", "relation": "has_device"},
+        {"from": "user5", "to": "dev5", "relation": "has_device"},
+        {"from": "user6", "to": "dev6", "relation": "has_device"},
+        {"from": "user7", "to": "dev7", "relation": "has_device"},
+        {"from": "user8", "to": "dev8", "relation": "has_device"},
+        {"from": "user9", "to": "dev9", "relation": "has_device"},
+        {"from": "user10", "to": "dev10", "relation": "has_device"},
+        {"from": "user11", "to": "dev11", "relation": "has_device"}
+      ],  
+    "tickets": [
+        {"id": "INC238491", "query": "cant get my meeting on calendar", "category": "Can't schedule meeting", "solved_by": "qxwer7", "timestamp": "2025-05-03T10:24:00"},
+        {"id": "INC572039", "query": "mic not working again!!!", "category": "Microphone not detected", "solved_by": "plmok3", "timestamp": "2025-05-01T08:13:22"},
+        {"id": "INC485092", "query": "screen share button is gone", "category": "Unable to share screen", "solved_by": "nbvfr1", "timestamp": "2025-04-27T14:35:10"},
+        {"id": "INC923847", "query": "update just stuck and wont move", "category": "Windows update stuck", "solved_by": "xytpl5", "timestamp": "2025-04-15T17:42:55"},
+        {"id": "INC184750", "query": "my slack bot just dead", "category": "Slack bot not responding", "solved_by": "asdzx9", "timestamp": "2025-05-06T11:55:30"},
+        {"id": "INC309284", "query": "why email not coming today?", "category": "Not receiving notifications", "solved_by": "qazws2", "timestamp": "2025-05-02T09:12:41"},
+        {"id": "INC658271", "query": "login failed again idk why", "category": "Invalid login credentials", "solved_by": "rfvbg8", "timestamp": "2025-05-04T13:47:05"},
+        {"id": "INC473829", "query": "outlook is being weird syncing", "category": "Calendar not syncing with Outlook", "solved_by": "plmko6", "timestamp": "2025-04-29T15:29:20"},
+        {"id": "INC792834", "query": "audio gone in the middle of call", "category": "No audio during call", "solved_by": "qwern0", "timestamp": "2025-04-28T12:18:47"},
+        {"id": "INC109283", "query": "vpn keeps disconnecting!!", "category": "VPN connection fails", "solved_by": "zasxd4", "timestamp": "2025-04-24T14:40:02"},
+        {"id": "INC902837", "query": "my system too slow suddenly", "category": "System is too slow", "solved_by": "xcvbn7", "timestamp": "2025-04-20T16:55:33"},
+        {"id": "INC475920", "query": "blue screen again ugh", "category": "Frequent blue screen error", "solved_by": "lkmnb1", "timestamp": "2025-04-22T18:25:11"},
+        {"id": "INC738291", "query": "notifications just stopped", "category": "Not receiving notifications", "solved_by": "ploki3", "timestamp": "2025-04-30T11:40:55"},
+        {"id": "INC283746", "query": "shared mailbox access not there", "category": "Cannot access shared mailbox", "solved_by": "qwert9", "timestamp": "2025-05-05T10:05:20"},
+        {"id": "INC493820", "query": "rules not working in inbox", "category": "Inbox rules not applying", "solved_by": "bnvfr5", "timestamp": "2025-04-26T13:14:45"},
+        {"id": "INC837465", "query": "calendar missing meetings", "category": "Meeting not showing on calendar", "solved_by": "zxvbn6", "timestamp": "2025-04-23T09:33:17"},
+        {"id": "INC192837", "query": "cant create new slack channel", "category": "Can't create new channel", "solved_by": "lkjhg7", "timestamp": "2025-05-01T15:50:39"},
+        {"id": "INC374829", "query": "getting app connect error", "category": "App integration failing", "solved_by": "mnbvc0", "timestamp": "2025-04-18T14:22:48"},
+        {"id": "INC928374", "query": "device not registering anymore", "category": "Device registration fails", "solved_by": "aqwsx3", "timestamp": "2025-05-07T12:05:29"},
+        {"id": "INC283947", "query": "email delay again", "category": "Emails are delayed", "solved_by": "plmko1", "timestamp": "2025-05-03T16:30:10"},
+        {"id": "INC675839", "query": "sound missing driver?", "category": "Missing audio driver", "solved_by": "qwasa8", "timestamp": "2025-04-19T11:18:45"},
+        {"id": "INC937465", "query": "account locked pls help", "category": "Account locked after multiple attempts", "solved_by": "xzplk2", "timestamp": "2025-04-21T13:57:33"},
+        {"id": "INC182736", "query": "reply thread broken again", "category": "Replies not threading correctly", "solved_by": "oiuyt5", "timestamp": "2025-04-27T10:40:18"},
+        {"id": "INC483920", "query": "permissions wont change", "category": "Cannot change user roles", "solved_by": "bnmkl7", "timestamp": "2025-04-25T17:45:52"},
+        {"id": "INC374658", "query": "slack bombarding with alerts", "category": "Notifications are too frequent", "solved_by": "qazpl9", "timestamp": "2025-05-06T09:28:40"}
+      ],
+      "user-ticket-relationships": [
+        {"from": "user1", "to": "INC238491", "relation": "raised_by"},
+        {"from": "user2", "to": "INC572039", "relation": "raised_by"},
+        {"from": "user1", "to": "INC485092", "relation": "raised_by"},
+        {"from": "user3", "to": "INC923847", "relation": "raised_by"},
+        {"from": "user4", "to": "INC184750", "relation": "raised_by"},
+        {"from": "user2", "to": "INC309284", "relation": "raised_by"},
+        {"from": "user5", "to": "INC658271", "relation": "raised_by"},
+        {"from": "user6", "to": "INC473829", "relation": "raised_by"},
+        {"from": "user3", "to": "INC792834", "relation": "raised_by"},
+        {"from": "user7", "to": "INC109283", "relation": "raised_by"},
+        {"from": "user4", "to": "INC902837", "relation": "raised_by"},
+        {"from": "user8", "to": "INC475920", "relation": "raised_by"},
+        {"from": "user9", "to": "INC738291", "relation": "raised_by"},
+        {"from": "user10", "to": "INC283746", "relation": "raised_by"},
+        {"from": "user1", "to": "INC493820", "relation": "raised_by"},
+        {"from": "user2", "to": "INC837465", "relation": "raised_by"},
+        {"from": "user3", "to": "INC192837", "relation": "raised_by"},
+        {"from": "user4", "to": "INC374829", "relation": "raised_by"},
+        {"from": "user5", "to": "INC928374", "relation": "raised_by"},
+        {"from": "user6", "to": "INC283947", "relation": "raised_by"},
+        {"from": "user7", "to": "INC675839", "relation": "raised_by"},
+        {"from": "user8", "to": "INC937465", "relation": "raised_by"},
+        {"from": "user9", "to": "INC182736", "relation": "raised_by"},
+        {"from": "user10", "to": "INC483920", "relation": "raised_by"},
+        {"from": "user1", "to": "INC374658", "relation": "raised_by"}
+      ]
+,
+    "ticket-issue-relationships": [
+        {"from": "INC238491", "to": "issue1", "relation": "of_issue"},
+        {"from": "INC572039", "to": "issue4", "relation": "of_issue"},
+        {"from": "INC485092", "to": "issue5", "relation": "of_issue"},
+        {"from": "INC923847", "to": "issue17", "relation": "of_issue"},
+        {"from": "INC184750", "to": "issue24", "relation": "of_issue"},
+        {"from": "INC309284", "to": "issue10", "relation": "of_issue"},
+        {"from": "INC658271", "to": "issue7", "relation": "of_issue"},
+        {"from": "INC473829", "to": "issue6", "relation": "of_issue"},
+        {"from": "INC792834", "to": "issue3", "relation": "of_issue"},
+        {"from": "INC109283", "to": "issue16", "relation": "of_issue"},
+        {"from": "INC902837", "to": "issue20", "relation": "of_issue"},
+        {"from": "INC475920", "to": "issue19", "relation": "of_issue"},
+        {"from": "INC738291", "to": "issue10", "relation": "of_issue"},
+        {"from": "INC283746", "to": "issue22", "relation": "of_issue"},
+        {"from": "INC493820", "to": "issue23", "relation": "of_issue"},
+        {"from": "INC837465", "to": "issue2", "relation": "of_issue"},
+        {"from": "INC192837", "to": "issue12", "relation": "of_issue"},
+        {"from": "INC374829", "to": "issue13", "relation": "of_issue"},
+        {"from": "INC928374", "to": "issue14", "relation": "of_issue"},
+        {"from": "INC283947", "to": "issue21", "relation": "of_issue"},
+        {"from": "INC675839", "to": "issue18", "relation": "of_issue"},
+        {"from": "INC937465", "to": "issue8", "relation": "of_issue"},
+        {"from": "INC182736", "to": "issue11", "relation": "of_issue"},
+        {"from": "INC483920", "to": "issue25", "relation": "of_issue"},
+        {"from": "INC374658", "to": "issue26", "relation": "of_issue"}
+      ]
+,
+                
+    "articles": [
+      {
+        "id": "article1",
+        "title": "Troubleshooting Issues with Meeting Scheduling",
+        "content": "If you're experiencing problems when trying to schedule a meeting, there are several possible causes and corresponding solutions. First, check your calendar permissions. If your calendar is shared or connected to another service (like Outlook or Google Calendar), ensure that you have the proper permissions to create events. In some cases, meeting scheduling may fail due to sync delays or outdated calendar tokens.\n\nAnother common issue involves time zone mismatches between participants. Always confirm that all participants' calendars are set to the correct time zone. Additionally, browser extensions or security software can sometimes block the scripts required to render the scheduling interface.\n\nClear your browser's cache and cookies, or try scheduling the meeting in a different browser or in incognito/private mode. If you're using a third-party scheduling tool, ensure it’s properly integrated with your primary calendar service.\n\nAlso check if the service’s backend (such as the scheduling API or cloud calendar service) is currently facing any outages. You can usually find this information on the service status page. If the issue persists, reach out to your IT admin to verify there are no policy restrictions on your account preventing scheduling actions.",
+        "keywords": ["schedule", "meeting", "not working"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article2",
+        "title": "Why Meetings May Not Appear in Your Calendar",
+        "content": "When a scheduled meeting fails to show up in your calendar, it can disrupt productivity and create confusion. The root of the issue often lies in sync problems between your calendar app and the meeting platform. Start by checking whether your calendar is set to auto-refresh or sync in real-time. If not, force a manual sync.\n\nEnsure that you are logged into the correct account, especially if you use multiple email addresses. Sometimes meetings are scheduled in one calendar but are viewed in another. Also, check for any filters or views that may hide certain event types. For example, in Outlook or Google Calendar, make sure that your calendar list includes the one where the meeting was created.\n\nNext, verify that you received a calendar invite and accepted it. If not accepted, it may not display depending on your settings. In corporate environments, calendar display issues can stem from permission misconfigurations, so consult your IT team if the problem persists.\n\nSome browser-based calendar tools may fail to load updates due to browser caching or network issues. Try accessing your calendar from a different browser or device to isolate the problem. Regularly updating your calendar app can also resolve hidden bugs that prevent meetings from displaying.",
+        "keywords": ["meeting", "calendar", "missing"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article3",
+        "title": "Troubleshooting No Sound During Meetings in Windows",
+        "content": "Experiencing silence during calls can be frustrating, especially when everything appears connected properly. This issue may stem from muted system settings, disconnected audio devices, or app-specific configurations. Start by verifying the output device in your system’s sound settings and ensure that the correct speaker or headset is selected. Check the application’s in-call audio settings to confirm that the correct output is assigned. Also, inspect the volume mixer to make sure the communication app isn’t muted. If using Bluetooth devices, ensure they are paired and actively connected. Occasionally, audio services on the operating system may crash—restarting the system or the audio service can resolve this. It's also advisable to update audio drivers or roll back recent updates if the problem began suddenly. If none of these steps resolve the issue, consult IT support or reinstall the calling application.",
+        "keywords": ["audio", "call", "sound", "mute"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      }
+      ,
+      {
+        "id": "article4",
+        "title": "Fixing Microphone Detection Problems",
+        "content": "When your system fails to detect a microphone, communication becomes difficult. Begin troubleshooting by checking if the microphone is physically connected and functional on another device. In your operating system’s audio settings, make sure the mic is not muted and is set as the default input device. If you're using a USB or Bluetooth microphone, verify that the drivers are properly installed. On Windows, visit the Sound Control Panel, and under the Recording tab, look for the microphone's activity. Make sure that apps have permission to access the microphone in privacy settings. If the device still isn't detected, try reinstalling the microphone drivers or using Device Manager to scan for hardware changes. Updates from the system or apps can sometimes disrupt hardware recognition, so reverting to a previous state may help. Persistent issues may indicate a hardware fault, requiring replacement.",
+        "keywords": ["microphone", "input", "audio", "device"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article5",
+        "title": "Resolving Screen Sharing Limitations",
+        "content": "Screen sharing issues often occur due to application permissions or system settings that restrict access. First, verify whether the application requesting screen share has the necessary permissions—especially on macOS, where screen recording access must be explicitly granted. On Windows, ensure the app is not blocked by antivirus or firewall settings. Confirm you are using a supported browser if you're sharing via web, and update the browser or the application itself. In corporate environments, group policies or admin restrictions may prevent screen sharing; contacting IT may be necessary. If the share screen button is disabled, try restarting the app or joining the meeting again. Sometimes outdated graphics drivers can also interfere—updating them might restore functionality. Ensure your device isn’t running in battery saver mode, which can limit performance and features like screen sharing.",
+        "keywords": ["screen", "share", "disabled"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article6",
+        "title": "Fixing Meeting Calendar Sync Issues with Outlook",
+        "content": "Calendar synchronization problems with Outlook can lead to missed meetings and confusion. If your calendar isn’t syncing properly, first ensure that you’re signed into the correct account in both Outlook and your calendar application. Verify that sync is enabled in the app’s settings. Restart both applications and check for pending updates. Sometimes, cached credentials or corrupted data files can block syncing—try clearing the cache or recreating the Outlook profile. On mobile devices, ensure the calendar permissions are correctly set and that power-saving modes aren’t restricting background sync. For Exchange-based accounts, double-check that the server settings are correctly configured. You may also need to re-add the account entirely to force a clean sync. Finally, if you’re part of an organization, admin-level settings or throttling policies may be involved—check with your IT department for escalated troubleshooting.",
+        "keywords": ["calendar", "sync", "outlook"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article7",
+        "title": "Handling Login Failures Due to Invalid Credentials",
+        "content": "Invalid login credentials are a common issue that can arise from various causes, including simple typos, expired passwords, or synchronization lags between systems. Begin by verifying the username and password being used. If you’re sure the credentials are correct, try resetting the password through the standard recovery process. Be cautious of saved credentials in browsers or password managers—they may be outdated. If your organization uses single sign-on (SSO), ensure that your identity provider is operational. Sometimes, accounts may be temporarily locked or flagged due to security policies after multiple failed attempts. Wait a few minutes before trying again. Also, check for keyboard layout changes or caps lock settings. In some cases, changes in your user group or permissions may prevent access, and contacting IT support will be necessary to restore access.",
+        "keywords": ["login", "failed", "credentials"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article8",
+        "title": "Account Locked After Multiple Login Attempts",
+        "content": "When an account gets locked after multiple failed login attempts, it's typically due to automated security measures aimed at preventing unauthorized access. Most systems implement lockout policies that restrict account access for a period of time or until manual intervention. If you find yourself locked out, wait the required lockout period before trying again, or use the password recovery option if available. In corporate environments, you may need to contact your IT support team to manually unlock your account. Ensure that you're using the correct login credentials and that autofill tools are not inserting incorrect information. If you're using VPN or remote access, check whether it's enforcing additional authentication layers that may trigger lockouts. Repeated lockouts might indicate someone else is attempting to access your account—enable multi-factor authentication (MFA) to enhance security.",
+        "keywords": ["locked", "account", "sign-in"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article9",
+        "title": "Troubleshooting Email Configuration Problems",
+        "content": "Setting up email can occasionally be challenging, particularly when dealing with manual configuration or incompatible server settings. If you're unable to configure your email, first verify that the email address and password are correct. Next, confirm the incoming and outgoing server settings, including the port numbers and encryption methods (SSL/TLS). Most providers offer documentation for these details. If you're using an app, ensure it supports the required email protocol (IMAP, POP3, or Exchange). Authentication errors may result from two-step verification, so consider generating an app-specific password. Also, make sure your internet connection is stable and that your firewall or antivirus software isn’t blocking the email client. If you're configuring email on a corporate device, mobile device management (MDM) restrictions might apply. In such cases, consult your IT support for the correct setup process or required configuration profiles.",
+        "keywords": ["email", "configure", "settings"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article10",
+        "title": "Why You're Not Receiving Notifications and How to Fix It",
+        "content": "Missing notifications can cause users to overlook important updates and communications. If you’re not receiving notifications, first check the system settings to ensure they’re enabled for the relevant app. Make sure Do Not Disturb mode or Focus Mode isn't active. On mobile devices, battery optimization settings may prevent apps from running in the background—disable this for critical apps. In the app itself, ensure that notification permissions are granted and that notification types (e.g., push, email, in-app) are correctly configured. Sometimes, app updates can reset preferences, so recheck settings after an update. On desktop systems, verify that notification banners or sounds are not disabled. If the issue persists, reinstall the app or clear its cache to eliminate corrupted settings. Corporate users may also need to check with IT if group policies are suppressing notifications.",
+        "keywords": ["notifications", "missing", "alerts"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article11",
+        "title": "Resolving Reply Threading Errors in Email Conversations",
+        "content": "Email clients rely on specific metadata—like message IDs and conversation headers—to properly thread replies. If replies aren’t threading correctly, first ensure that you're using a modern email client that supports conversation view. Check whether replies are being sent from different email aliases or accounts, which may disrupt threading. Also, verify that subject lines aren't being altered significantly, as this can confuse some systems. In Outlook and Gmail, for instance, disabling conversation view can reset how threads are displayed. Clear your email cache or switch to a different view mode temporarily to see if that resolves the issue. Organizational email systems sometimes route messages through servers that strip or modify headers, so contact IT if the problem affects multiple users. Using consistent reply chains and not forwarding replies as new emails also helps preserve threading.",
+        "keywords": ["thread", "reply", "message"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article12",
+        "title": "Steps to Enable New Channel Creation in Workspaces",
+        "content": "Creating new channels in collaboration platforms is essential for organizing communication by team or project. If you're unable to create a new channel, start by checking your user role—some platforms restrict channel creation to admins or certain roles. Navigate to the workspace settings and verify that channel creation permissions are enabled for your role. If you're part of a managed environment, administrative policies might limit this action. It's also worth checking if the maximum number of channels has been reached, as some systems impose limits. Browser extensions or corrupted local cache may cause UI issues; try clearing your cache or using an incognito window. For mobile users, ensure the app is up-to-date. Finally, if everything seems in order but the issue persists, reach out to your workspace administrator to verify whether any global restrictions or integrations are interfering with channel creation.",
+        "keywords": ["channel", "create", "workspace"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article13",
+        "title": "Fixing Common Problems with App Integrations",
+        "content": "Integrating third-party apps into your collaboration platform can greatly enhance productivity, but failures during integration can arise from several sources. First, ensure that the app you're trying to connect is supported and compatible with your platform version. Authentication errors are common—make sure API keys, tokens, or OAuth permissions are valid and haven’t expired. Network restrictions like firewalls or proxy settings might block communication with the app’s server. Admin privileges may be required for certain integrations, so verify that your account has the right access. Check platform-specific logs for error messages during the integration attempt. Some integrations require both apps to be connected to the same workspace or domain, so confirm these conditions. Also, confirm that your organization's policies don't block external app connections. Reinstalling or reauthorizing the app may resolve lingering issues. When in doubt, consult the app's integration guide or support team.",
+        "keywords": ["integration", "apps", "connect"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article14",
+        "title": "Resolving Issues During Device Registration",
+        "content": "Device registration failures typically occur due to a mismatch in system policies, device incompatibility, or network restrictions. If you’re encountering this issue, first ensure your device meets the minimum OS and security requirements defined by your organization. Check your internet connection—some networks block registration services due to firewall settings or DNS filtering. Make sure time and date settings are correct, as certificates and authentication services rely on them. If you’re using a mobile device, confirm that the device isn’t jailbroken or rooted, which can violate security policies. Corporate users should ensure their accounts are active and not already associated with the maximum number of devices. Also, check for any pending software updates that might resolve known bugs in the registration process. If MDM or endpoint management tools are in place, the device may need to be pre-approved before registration. Contact IT support if the issue continues despite following these steps.",
+        "keywords": ["device", "register", "fail"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article15",
+        "title": "Why Your Device May Be Blocked Due to Compliance Issues",
+        "content": "Devices may be blocked from accessing corporate resources if they fail to meet compliance requirements enforced by endpoint management systems. This typically includes outdated operating systems, missing security patches, disabled encryption, or unapproved apps installed on the device. To resolve this, check your device's compliance policy settings within the management portal or mobile device management (MDM) application. Ensure that antivirus software is active, disk encryption (e.g., BitLocker or FileVault) is enabled, and system updates are current. Rooted or jailbroken devices are automatically flagged as non-compliant. Corporate policies may also enforce password complexity, screen lock settings, or restrict access to unmanaged devices. If your device was compliant previously, check whether recent changes—like a failed update or altered security settings—have triggered the block. IT departments can often provide a compliance report that identifies exactly which requirement failed. Resolving those specific items and syncing with the management server should restore access.",
+        "keywords": ["compliance", "device", "blocked"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article16",
+        "title": "Troubleshooting VPN Connection Failures",
+        "content": "If your VPN connection fails, the issue could stem from configuration errors, network limitations, or client-side software problems. Begin by verifying your username and password, and ensure your VPN client software is up-to-date. Check if your internet connection is stable—VPNs require uninterrupted connectivity. Many organizations use split tunneling, DNS routing, or specific ports that must remain open, so make sure your firewall or antivirus isn’t blocking VPN traffic. DNS leaks or incorrect DNS server settings can also prevent successful VPN resolution. Corporate networks might limit VPN access to certain IP ranges or timeframes, so confirm you have authorization. Some VPNs require certificates or two-factor authentication, and expired credentials will block access. Rebooting your device and router often resolves temporary connectivity issues. If you’re using a corporate laptop, reset your VPN profile using the provided configuration file. Still stuck? Contact IT for logs and further diagnostics.",
+        "keywords": ["VPN", "connect", "network"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article17",
+        "title": "Fixing a Windows Update That’s Stuck",
+        "content": "A stuck Windows update can be frustrating and is often caused by corrupted update files, incompatible software, or insufficient disk space. Start by confirming your device has a stable internet connection and enough free storage (typically over 20 GB). Restart the system and try running the Windows Update Troubleshooter, which can automatically detect and fix Common_Issues. If that doesn't help, go to Services and restart 'Windows Update' and 'Background Intelligent Transfer Service'. You can also delete the contents of the SoftwareDistribution folder (C:\\Windows\\SoftwareDistribution) to clear any partially downloaded updates. Ensure your antivirus software isn’t blocking update components—try disabling it temporarily and attempt the update again. If updates still won’t install, boot into Safe Mode with Networking and retry. As a last resort, use the Windows Update Assistant or the Media Creation Tool to manually install updates. Frequent update problems may indicate deeper system issues that require a system file check or repair install.",
+        "keywords": ["update", "windows", "stuck"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article18",
+        "title": "Restoring Missing Audio Drivers in Windows",
+        "content": "Missing audio drivers can result in a complete lack of sound output on your device. This usually happens after a Windows update, a fresh OS install, or driver corruption. Begin by opening Device Manager and expanding the 'Sound, video and game controllers' section. If your audio device is missing or shows a yellow warning icon, right-click and select 'Scan for hardware changes' or 'Update driver'. If this doesn’t work, visit your device manufacturer’s website and download the latest audio driver for your specific model. Avoid relying solely on Windows Update, as it might not always fetch the correct driver version. Sometimes, uninstalling the current driver and rebooting forces Windows to reinstall a working version. Additionally, ensure that audio services are running by typing `services.msc` and checking 'Windows Audio' and 'Audio Endpoint Builder'. For laptops, check BIOS settings to confirm the onboard audio is enabled. A missing or disabled driver is fixable with just a few targeted steps.",
+        "keywords": ["driver", "audio", "missing"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article19",
+        "title": "Understanding and Resolving Blue Screen Errors",
+        "content": "Frequent blue screen errors, also known as BSODs (Blue Screen of Death), indicate critical system failures. Common causes include hardware malfunctions, corrupt drivers, or system file issues. First, note the stop code displayed during the crash—it provides hints about the problem. Tools like BlueScreenView can help analyze crash dump files stored at `C:\\Windows\\Minidump`. Check Device Manager for driver issues and update or roll back any recently changed drivers. Run `sfc /scannow` and `DISM /Online /Cleanup-Image /RestoreHealth` from the command line to repair system files. Test RAM using the built-in Windows Memory Diagnostic Tool and consider checking disk health with `chkdsk /f`. If the system recently updated or installed new software, use System Restore to revert changes. BIOS or firmware updates from the hardware manufacturer can also resolve hardware-related crashes. Repeated BSODs usually point to an unstable driver or failing hardware—addressing these should bring system stability back.",
+        "keywords": ["blue screen", "crash", "error"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article20",
+        "title": "Improving System Performance When Your Device Feels Slow",
+        "content": "When your system feels sluggish, multiple factors may be contributing to degraded performance. Common culprits include too many startup programs, outdated drivers, limited RAM, or insufficient disk space. Begin by opening Task Manager and checking CPU, memory, and disk usage. Disable unnecessary startup apps from the Startup tab. Next, uninstall unused software and run Disk Cleanup or Storage Sense to clear temporary files. Make sure your system has the latest updates, including chipset and graphics drivers. If your hard drive is nearly full, Windows may slow down significantly—aim to keep at least 20% free. Consider upgrading to an SSD if you're still using an HDD, as the performance difference is substantial. Running a malware scan is also advised; infections can hog resources in the background. Finally, adjust visual effects under 'Performance Options' by choosing 'Adjust for best performance'. These steps collectively restore responsiveness without requiring advanced hardware upgrades.",
+        "keywords": ["performance", "slow", "optimize"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article21",
+        "title": "Troubleshooting Delayed Email Delivery",
+        "content": "Delayed emails can cause serious communication breakdowns, especially in professional environments. This issue can stem from multiple sources, such as large attachment sizes, server congestion, incorrect email client settings, or problems with the recipient's mail server. To start, check your Outbox to confirm if the message is stuck. Restarting your email client can sometimes force the message to send. Next, verify that you have a stable internet connection. If using Microsoft Outlook, try running the built-in 'Repair' tool from the Account Settings menu. Large file attachments may also be a problem—consider compressing them or using cloud storage links instead. If you're on a corporate network, delays could be due to mail server throttling or spam filtering rules. In Office 365 or Exchange environments, administrators should check the message trace logs to identify any bottlenecks. Ensuring proper synchronization settings and up-to-date client software can significantly reduce the chances of mail delays.",
+        "keywords": ["email", "delayed", "outbox"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article22",
+        "title": "Accessing Shared Mailboxes in Outlook",
+        "content": "Being unable to access a shared mailbox can disrupt team workflows, especially in collaborative environments. First, ensure that you’ve been granted proper permissions to the shared mailbox. In Outlook, permissions are usually set by an administrator via Microsoft 365 admin center or Exchange Management Shell. If permissions are in place, try manually adding the shared mailbox: go to File > Account Settings > Account Settings, select your account, click 'Change', then 'More Settings', and add the mailbox under the 'Advanced' tab. If the mailbox appears but shows an error or doesn't sync, try removing and re-adding it. Cached mode settings or profile corruption could be the culprit, in which case creating a new Outlook profile may resolve the issue. Also, ensure that the mailbox hasn’t been deleted or renamed. In some cases, synchronization problems on mobile devices may require clearing app cache or reconfiguring the account. These steps typically resolve access issues swiftly.",
+        "keywords": ["shared", "mailbox", "access"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article23",
+        "title": "Fixing Email Rules That Fail to Apply",
+        "content": "Email rules are a powerful feature for organizing your inbox, but they can sometimes stop working due to configuration errors, software issues, or rule corruption. If you're noticing that rules aren’t being applied, start by reviewing them in Outlook by navigating to File > Manage Rules & Alerts. Ensure that each rule is turned on and set with clear conditions. Rules only apply to incoming emails that meet their criteria exactly—watch out for overlapping or conflicting rules. If using a combination of client-side and server-side rules, keep in mind that only server-side rules work when Outlook is closed. Try renaming or recreating malfunctioning rules to eliminate corruption. Rules that stop working after an Outlook update may need to be exported, deleted, and re-imported. For Exchange or Office 365 users, consider managing rules via Outlook Web App (OWA), which sometimes bypasses client-side limitations. Following these steps helps restore automated message handling.",
+        "keywords": ["rules", "inbox", "email"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article24",
+        "title": "Diagnosing Unresponsive Slack Bots",
+        "content": "Slack bots are valuable tools for automating tasks and improving team productivity, but they can sometimes become unresponsive due to a variety of reasons. If your bot is not replying to commands or messages, begin by verifying that the bot is still installed and authorized in the Slack workspace. Navigate to your Slack app settings and confirm the bot’s permissions and scopes. If the bot uses an external API or webhook, check that those services are running and reachable. You can also inspect the bot’s activity logs if available. Ensure that the bot’s token has not expired or been revoked. Restarting the bot service and redeploying it can sometimes resolve runtime errors. Pay attention to any changes in Slack’s API that may have broken compatibility. Also, validate that the Slack channel the bot is expected to respond in has not changed its permissions. By following these steps, most unresponsive bot issues can be isolated and resolved efficiently.",
+        "keywords": ["slack", "bot", "unresponsive"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article25",
+        "title": "Changing User Roles and Permissions in Slack",
+        "content": "Managing user roles in Slack is essential for maintaining workspace security and clarity. If you're having trouble changing user roles, the first step is to confirm you have administrative privileges. Only workspace owners or admins can modify roles. In the Slack admin dashboard, navigate to 'Manage Members' and locate the specific user. Use the role dropdown to select the appropriate new role—whether it be Admin, Owner, or Member. For Enterprise Grid users, roles can also be adjusted at the organization level. Common blockers include attempting to change roles through the desktop app without the necessary permissions, or Slack temporarily locking changes due to account security checks. If you're using SCIM provisioning, role changes may need to occur via your identity provider. Also note that certain roles like Primary Owner can only be transferred, not directly edited. Double-check that role changes have been saved and propagated across the workspace.",
+        "keywords": ["slack", "permissions", "roles"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article26",
+        "title": "Reducing Excessive Slack Notifications",
+        "content": "Slack notifications can quickly become overwhelming, especially in busy workspaces. To regain control, start by customizing your notification preferences under Settings > Notifications. You can choose to be notified only for direct messages, mentions, or nothing at all. For individual channels, click the channel name, select 'Notifications', and fine-tune alerts based on priority. Muting low-priority channels can help reduce noise without leaving the group. Additionally, set up Do Not Disturb hours to pause notifications during specific times. If you're receiving alerts from Slack apps or bots, check their individual settings to adjust frequency or disable them altogether. For mobile users, Slack allows separate notification rules from desktop, so be sure to configure both. Finally, consider using keywords to trigger alerts only when truly relevant. By optimizing these settings, you can make Slack a more manageable and productive communication tool.",
+        "keywords": ["notifications", "slack", "spam"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article27",
+        "title": "Fixing Audio Issues During Webex Calls on macOS",
+        "content": "Users on macOS may encounter audio problems during Webex calls due to system sound routing or permissions. First, go to 'System Settings' > 'Sound' and confirm the correct output device (e.g., headphones or speakers) is selected and not muted. Also, check 'Input' settings to ensure your microphone is correctly recognized. Navigate to 'System Settings' > 'Privacy & Security' > 'Microphone' to ensure Webex is granted access. For Bluetooth devices, confirm that they are connected and set as the default device. Sometimes, restarting the 'coreaudiod' process via Terminal using 'sudo killall coreaudiod' can restore audio. Additionally, ensure macOS is up-to-date and check for Webex app updates. If using a browser version of Webex, ensure microphone and speaker access is granted via browser permissions. If the issue persists, reinstall Webex and verify sound settings again.",
+        "keywords": ["macos", "webex", "audio", "mute", "permissions"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      },
+      {
+        "id": "article28",
+        "title": "Resolving Audio Failures in Webex Calls Due to App Settings",
+        "content": "Webex may experience audio failures during calls if its internal audio settings are misconfigured or if there's a conflict with system audio. First, open Webex and navigate to 'Audio Settings' before joining a call to test your speaker and microphone. Ensure the correct devices are selected. During calls, use the in-call device selector to switch output/input devices as needed. Check whether Webex has permission to access microphone and speaker resources in your operating system settings. If using headphones or Bluetooth devices, connect them before launching Webex. In some cases, corrupted Webex cache files can interfere with audio—clearing the app cache or reinstalling can help. Lastly, network issues or firewalls may block audio ports; verify that the required UDP ports (e.g., 5004, 33434-33598) are not blocked. Contact support if issues continue despite following these steps.",
+        "keywords": ["webex", "audio", "call", "settings", "troubleshooting"],
+        "created_at": "2025-06-09T00:00:00Z",
+        "updated_at": "2025-06-09T00:00:00Z"
+      } , 
+      {
+        "id": "article29",
+        "title": "How to Host a Webinar in Webex",
+        "content": "Hosting a webinar in Webex typically starts by accessing the Webex Events dashboard. You select your date, fill in the event details, and configure settings such as Q&A, polling, and attendee registration. Make sure you're signed in with your work credentials and that Webex Events is enabled for your account. Webinars are usually available to full-time employees; access may vary by department or job role. Note: Organization apply restrictions based on role or seniority, like needing to be Band 45, or certain regions may have different access levels. If you can't see the option to host a webinar, check with your IT department or supervisor.",
+        "keywords": ["Webex", "Webinar", "Hosting", "Permissions"],
+        "created_at": "2025-05-01T10:00:00Z",
+        "updated_at": "2025-05-15T15:00:00Z"
+    },
+    {
+        "id": "article30",
+        "title": "Webex Webinar Troubleshooting Guide",
+        "content": "Webex webinar issues often involve audio dropouts, invite errors, and permissions-related problems. Ensure you have a stable internet connection and your browser is up to date. Some users report not seeing the 'Host Webinar' option—this might be due to licensing or account-level permissions. In those cases, contact IT or your supervisor. Sometimes, webinar tools are only unlocked for advanced users or certain employee tiers, depending on how your access is provisioned.",
+        "keywords": ["Webex", "Webinar", "Troubleshooting", "Permissions"],
+        "created_at": "2025-05-02T11:00:00Z",
+        "updated_at": "2025-05-16T16:00:00Z"
+    },
+    {
+        "id": "article31",
+        "title": "Hosting Webinars in Zoom",
+        "content": "Zoom's webinar features are similar to Webex, including support for registration, Q&A, and panelists. Some users find Zoom easier to use for external-facing events. Remember that hosting rights in Zoom, like Webex, might be tied to your license or access level, which can vary depending on your team or region.",
+        "keywords": ["Zoom", "Webinar", "Hosting", "Permissions"], 
+        "created_at": "2025-05-04T13:00:00Z",
+        "updated_at": "2025-05-18T18:00:00Z"
+    },
+    {
+      "id": "article32",
+      "title": "Troubleshooting Mail Delivery in Outlook",
+      "content": "If you're not receiving emails in Outlook, check your internet connection, spam folder, and mailbox storage limit. Make sure Outlook is connected to your email server. Try restarting the app and ensure your credentials are valid. If issues persist, contact IT support for further diagnosis.",
+      "keywords": ["Outlook", "Mail Delivery", "Troubleshooting"],
+      "created_at": "2025-06-10T00:00:00Z",
+      "updated_at": "2025-06-10T00:00:00Z"
+    },
+    {
+      "id": "article33",
+      "title": "Common Outlook Email Issues",
+      "content": "Users often face delayed emails, sync errors, or missing emails in Outlook. Possible reasons include corrupted profiles, incorrect rules/filters, or regional settings. If you're part of a shared mailbox, verify that permissions haven't changed recently.",
+      "keywords": ["Outlook", "Email Issues", "Sync Errors"],
+      "created_at": "2025-06-10T00:00:00Z",
+      "updated_at": "2025-06-10T00:00:00Z"
+    },
+    {
+      "id": "article34",
+      "title": "Fixing Outlook Sync Errors",
+      "content": "Sync issues in Outlook can result in missing or delayed emails. Navigate to Account Settings and verify sync frequency. Restarting Outlook or repairing the OST file may help.",
+      "keywords": ["Outlook", "Sync Errors", "Repair"],
+      "created_at": "2025-06-10T00:00:00Z",
+      "updated_at": "2025-06-10T00:00:00Z"
+    },
+    {
+      "id": "article35",
+      "title": "Mailbox Size Limits and Delivery Failures",
+      "content": "If your Outlook mailbox has exceeded its storage quota, incoming emails may be rejected. Empty trash or archive old messages to free up space.",
+      "keywords": ["Outlook", "Mailbox Size", "Delivery Failures"],
+      "created_at": "2025-06-10T00:00:00Z",
+      "updated_at": "2025-06-10T00:00:00Z"
+    },
+    {
+      "id": "article36",
+      "title": "Eliminating Echo in Webex Calls",
+      "content": "Background echo during Webex calls can be caused by improper audio settings or hardware issues. Ensure that your microphone and speakers are not placed too close to each other, as this can create feedback loops. Use headphones to minimize echo. Check Webex audio settings to ensure the correct input and output devices are selected. If the issue persists, try muting participants who are not speaking, as their devices may be causing the echo. Additionally, ensure that your audio drivers are up-to-date and that your operating system is configured to suppress background noise.",
+      "keywords": ["Webex", "Echo", "Audio Issues"],
+      "created_at": "2025-06-10T00:00:00Z",
+      "updated_at": "2025-06-10T00:00:00Z"
+    },
+    {
+      "id": "article37",
+      "title": "Dealing with Random Noise in Webex Calls",
+      "content": "Unwanted noise during Webex calls might be caused by faulty cables, background interference, or app-level sensitivity settings. Try adjusting noise suppression or use a different mic.",
+      "keywords": ["Webex", "Noise", "Interference"],
+      "created_at": "2025-06-10T00:00:00Z",
+      "updated_at": "2025-06-10T00:00:00Z"
+    }
+
+    ],                                                                                                                                                           
+    "article-issue-relationships": [
+      { "from": "issue1", "to": "article1", "relation": "solved_by" },
+      { "from": "issue2", "to": "article2", "relation": "solved_by" },
+      { "from": "issue3", "to": "article3", "relation": "solved_by" },
+      { "from": "issue4", "to": "article4", "relation": "solved_by" },
+      { "from": "issue5", "to": "article5", "relation": "solved_by" },
+      { "from": "issue6", "to": "article6", "relation": "solved_by" },
+      { "from": "issue7", "to": "article7", "relation": "solved_by" },
+      { "from": "issue8", "to": "article8", "relation": "solved_by" },
+      { "from": "issue9", "to": "article9", "relation": "solved_by" },
+      { "from": "issue10", "to": "article10", "relation": "solved_by" },
+      { "from": "issue11", "to": "article11", "relation": "solved_by" },
+      { "from": "issue12", "to": "article12", "relation": "solved_by" },
+      { "from": "issue13", "to": "article13", "relation": "solved_by" },
+      { "from": "issue14", "to": "article14", "relation": "solved_by" },
+      { "from": "issue15", "to": "article15", "relation": "solved_by" },
+      { "from": "issue16", "to": "article16", "relation": "solved_by" },
+      { "from": "issue17", "to": "article17", "relation": "solved_by" },
+      { "from": "issue18", "to": "article18", "relation": "solved_by" },
+      { "from": "issue19", "to": "article19", "relation": "solved_by" },
+      { "from": "issue20", "to": "article20", "relation": "solved_by" },
+      { "from": "issue21", "to": "article21", "relation": "solved_by" },
+      { "from": "issue22", "to": "article22", "relation": "solved_by" },
+      { "from": "issue23", "to": "article23", "relation": "solved_by" },
+      { "from": "issue24", "to": "article24", "relation": "solved_by" },
+      { "from": "issue25", "to": "article25", "relation": "solved_by" },
+      { "from": "issue26", "to": "article26", "relation": "solved_by" },
+      { "from": "issue3", "to": "article27", "relation": "solved_by" },
+      { "from": "issue3", "to": "article28", "relation": "solved_by" },
+      { "from": "issue27", "to": "article29", "relation": "solved_by" },
+      { "from": "issue27", "to": "article30", "relation": "solved_by" },
+      { "from": "issue28", "to": "article32", "relation": "solved_by" },
+      { "from": "issue28", "to": "article33", "relation": "solved_by" },
+      { "from": "issue28", "to": "article34", "relation": "solved_by" },
+      { "from": "issue29", "to": "article36", "relation": "solved_by" },
+      { "from": "issue30", "to": "article37", "relation": "solved_by" }
+    ],
+      
+    "outages": [
+        {
+          "id": "out1",
+          "title": "Audio Outage on May 1, 2025",
+          "description": "There was a widespread audio outage affecting users in North America. The issue was resolved within 2 hours.",
+          "start_time": "2025-05-01T08:00:00",
+          "end_time": "2025-05-01T10:00:00",
+          "affected_services": ["Audio Calls", "Video Conferencing"],
+          "status": "Resolved",
+          "impact": "High",
+          "location": "Global",
+          "expected_resolution": ""
+        },
+        {
+          "id": "out2",
+          "title": "Screen Sharing Issues on May 3, 2025",
+          "description": "Users reported issues with screen sharing during video calls. The problem was fixed within 1 hour.",
+          "start_time": "2025-05-03T09:30:00",
+          "end_time": "2025-05-03T10:30:00",
+          "affected_services": ["Screen Sharing", "Video Conferencing"],
+          "status": "Resolved",
+          "impact": "Medium",
+          "location": "North America",
+          "expected_resolution": ""
+        },
+        {
+          "id": "out3",
+          "title": "Mail Delivery Delays and Failures",
+          "description": "Active outage affecting mail delivery in the India Office. Users are experiencing delays and failures in email delivery.",
+          "start_time": "2025-06-10T09:00:00",
+          "end_time": "",
+          "affected_services": ["Mail Delivery"],
+          "status": "Active",
+          "impact": "Critical",
+          "location": "India Office",
+          "expected_resolution": "2025-06-10T14:00:00"
+        }
+      ]  ,
+      "product-outage-relationships": [
+        { "from": "prod1", "to": "out1", "relation": "has_outage" },
+        { "from": "prod2", "to": "out2", "relation": "has_outage" },
+        { "from": "prod2", "to": "out3", "relation": "has_outage" }
+
+      ]
+      
+
+      
+}

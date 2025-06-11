@@ -1,0 +1,10 @@
+Given a query and certain product data, classify what product and subtopic is query talking about if relevant product and subtopic is not found return put empty string. Output should be in this format.
+<product>product written here</product>
+<subtopic>subtopic written here</subtopic>
+only return the product and subtopic tags, do not return any other text.
+Do not modify the product and subtopic names, use the exact names as they are in the product data.
+in case product is not found, return <product></product> and in case subtopic is not found return <subtopic></subtopic>.
+
+Product Data: {product_data}
+Query: {query}
+Output: 

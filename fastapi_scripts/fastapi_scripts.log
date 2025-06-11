@@ -1,0 +1,1930 @@
+2025-06-11 14:56:30,350 - fastapi_scripts - INFO - Starting FastAPI application
+2025-06-11 15:00:57,685 - fastapi_scripts - INFO - Starting FastAPI application
+2025-06-11 15:01:12,132 - fastapi_scripts - INFO - Starting FastAPI application
+2025-06-11 15:01:30,367 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:01:30,367 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:01:30,368 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:01:30,368 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:01:30,368 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:01:33,502 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Outlook</product>
+<subtopic>Email Configuration</subtopic>
+
+2025-06-11 15:01:33,503 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:01:33,503 - fastapi_scripts - INFO - Classification result: Product - Outlook, Subtopic - Email Configuration
+2025-06-11 15:01:33,503 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:01:34,172 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:01:34,172 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:01:34,179 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:01:34,180 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:01:34,184 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod2', 'name': 'Outlook', 'alias': ['Microsoft Outlook', 'Outlook Email', 'MS Outlook']}, 'active_outages': [{'outage_id': 'out3', 'title': 'Mail Delivery Delays and Failures', 'description': 'Active outage affecting mail delivery in the India Office. Users are experiencing delays and failures in email delivery.', 'start_time': '2025-06-10T09:00:00', 'expected_resolution': '2025-06-10T14:00:00', 'impact': 'Critical', 'location': 'India Office'}]}
+2025-06-11 15:01:34,184 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:01:34,186 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub6
+name: Email Configuration
+alias: Setup Email, Configure Outlook, Email Settings
+Constraints: 
+Access: 
+Common_Issues: 
+
+2025-06-11 15:01:34,186 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:01:34,261 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue9
+Description: Cannot configure email
+Product: Outlook
+Subtopic: Email Configuration
+Score: 0.7947
+Related Articles:
+ - Troubleshooting Email Configuration Problems (ID: article9)
+---
+
+2025-06-11 15:01:34,261 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:01:34,261 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:01:34,261 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:01:38,915 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:01:38,916 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:02:17,314 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:02:17,314 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:02:17,314 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:02:17,315 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:02:17,315 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:02:19,809 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Webinar - Webex</subtopic>
+
+2025-06-11 15:02:19,809 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:02:19,809 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Webinar - Webex
+2025-06-11 15:02:19,810 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:02:19,987 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:02:19,987 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:02:19,990 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:02:19,990 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:02:20,001 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:02:20,001 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:02:20,003 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub20
+name: Webinar - Webex
+alias: Webex Webinar, Hosting Webex Webinar, Webex Events
+Constraints: Band 45 or above
+Access: Full-time employees
+Common_Issues: Audio dropouts, sInvite errors, Permissions problems
+
+2025-06-11 15:02:20,003 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:02:20,066 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue27
+Description: Unable to host a webinar in Webex
+Product: Webex
+Subtopic: Webinar - Webex
+Score: 0.9812
+Related Articles:
+ - Webex Webinar Troubleshooting Guide (ID: article30)
+ - How to Host a Webinar in Webex (ID: article29)
+---
+Issue ID: issue23
+Description: Inbox rules not applying
+Product: Webex
+Subtopic: Webinar - Webex
+Score: 0.5291
+Related Articles:
+ - Fixing Email Rules That Fail to Apply (ID: article23)
+---
+
+2025-06-11 15:02:20,066 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:02:20,066 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:02:20,066 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:02:22,849 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:02:22,849 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:02:56,316 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:02:56,316 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:02:56,316 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:02:56,317 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:02:56,318 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:03:00,753 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:03:00,754 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:03:00,754 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:03:00,754 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:03:00,920 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:03:00,921 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:03:00,923 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:03:00,924 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:03:00,926 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:03:00,926 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:03:00,928 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:03:00,928 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:03:00,994 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7444
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6814
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6284
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5962
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:03:00,994 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:03:00,994 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:03:00,994 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:03:03,755 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:03:03,755 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:36:20,320 - fastapi_scripts - INFO - Starting FastAPI application
+2025-06-11 15:36:27,021 - fastapi_scripts - INFO - Starting FastAPI application
+2025-06-11 15:37:15,112 - fastapi_scripts - INFO - Processing RAG query for user_id: default_user
+2025-06-11 15:37:15,112 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:37:15,112 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:37:15,113 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:37:15,646 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:37:15,646 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:37:15,646 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:37:20,496 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:37:20,496 - fastapi_scripts - INFO - RAG query processed successfully for user_id: default_user
+2025-06-11 15:37:20,504 - fastapi_scripts - INFO - Processing KG query for user_id: default_user
+2025-06-11 15:37:20,504 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:37:20,504 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:37:20,505 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:37:20,506 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:37:25,549 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:37:25,549 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:37:25,549 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:37:25,549 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:37:25,701 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:37:25,701 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:37:25,766 - fastapi_scripts - INFO - User profile retrieved: User details not found.
+2025-06-11 15:37:25,766 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:37:25,769 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:37:25,770 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:37:25,772 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:37:25,772 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:37:25,853 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:37:25,853 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:37:25,853 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:37:25,853 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:37:27,128 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:37:27,129 - fastapi_scripts - INFO - KG query processed successfully for user_id: default_user
+2025-06-11 15:41:13,276 - fastapi_scripts - INFO - Processing RAG query for user_id: default_user
+2025-06-11 15:41:13,276 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:41:13,276 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:41:13,276 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:41:13,780 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:41:13,780 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:41:13,780 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:41:18,244 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:41:18,245 - fastapi_scripts - INFO - RAG query processed successfully for user_id: default_user
+2025-06-11 15:41:18,248 - fastapi_scripts - INFO - Processing KG query for user_id: default_user
+2025-06-11 15:41:18,248 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:41:18,248 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:41:18,249 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:41:18,249 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:41:22,742 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:41:22,742 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:41:22,742 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:41:22,742 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:41:22,887 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:41:22,888 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:41:22,890 - fastapi_scripts - INFO - User profile retrieved: User details not found.
+2025-06-11 15:41:22,891 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:41:22,893 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:41:22,893 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:41:22,895 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:41:22,895 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:41:22,962 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:41:22,962 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:41:22,962 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:41:22,962 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:41:24,107 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:41:24,107 - fastapi_scripts - INFO - KG query processed successfully for user_id: default_user
+2025-06-11 15:44:35,798 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:44:35,799 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:44:35,799 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:44:35,800 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:44:35,995 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:44:35,995 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:44:35,995 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:44:39,107 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:44:39,108 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:44:39,115 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:44:39,115 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:44:39,116 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:44:39,117 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:44:39,118 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:44:39,943 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:44:39,943 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:44:39,943 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:44:39,943 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:44:40,108 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:44:40,108 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:44:40,111 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:44:40,112 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:44:40,114 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:44:40,114 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:44:40,119 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:44:40,119 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:44:40,196 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:44:40,196 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:44:40,197 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:44:40,197 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:44:43,211 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:44:43,212 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:45:46,946 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:45:46,946 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:45:46,946 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:45:46,946 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:45:47,110 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:45:47,110 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:45:47,110 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:45:53,555 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:45:53,556 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:45:53,563 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:45:53,563 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:45:53,563 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:45:53,564 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:45:53,564 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:45:55,093 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:45:55,094 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:45:55,094 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:45:55,094 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:45:55,249 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:45:55,249 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:45:55,252 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:45:55,252 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:45:55,254 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:45:55,254 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:45:55,256 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:45:55,256 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:45:55,321 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:45:55,322 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:45:55,322 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:45:55,322 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:45:57,998 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:45:57,998 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:46:27,980 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:46:27,980 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:46:27,980 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:46:27,980 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:46:28,126 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:46:28,126 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:46:28,126 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:46:33,170 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:46:33,171 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:46:33,178 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:46:33,178 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:46:33,178 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:46:33,179 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:46:33,179 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:46:37,022 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:46:37,023 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:46:37,023 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:46:37,023 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:46:37,176 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:46:37,176 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:46:37,179 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:46:37,179 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:46:37,181 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:46:37,181 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:46:37,183 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:46:37,183 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:46:37,245 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7352
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6869
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6814
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5990
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+
+2025-06-11 15:46:37,245 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:46:37,245 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:46:37,245 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:46:43,552 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:46:43,552 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:47:41,972 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:47:41,972 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:47:41,972 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:47:41,973 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:47:42,133 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:47:42,133 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:47:42,133 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:47:47,431 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:47:47,431 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:47:47,442 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:47:47,442 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:47:47,442 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:47:47,443 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:47:47,443 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:47:49,218 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:47:49,219 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:47:49,219 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:47:49,219 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:47:49,379 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:47:49,380 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:47:49,382 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:47:49,382 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:47:49,385 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:47:49,385 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:47:49,386 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:47:49,386 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:47:49,449 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:47:49,450 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:47:49,450 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:47:49,450 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:47:50,961 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:47:50,961 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:49:37,870 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:49:37,870 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:49:37,870 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:49:37,871 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:49:38,034 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:49:38,034 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:49:38,034 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:49:43,234 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:49:43,234 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:49:43,241 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:49:43,241 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:49:43,241 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:49:43,242 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:49:43,242 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:49:44,013 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:49:44,013 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:49:44,014 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:49:44,014 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:49:44,168 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:49:44,168 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:49:44,171 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:49:44,171 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:49:44,173 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:49:44,173 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:49:44,175 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:49:44,175 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:49:44,238 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:49:44,238 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:49:44,238 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:49:44,238 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:49:49,210 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:49:49,211 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:50:29,483 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:50:29,484 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:50:29,485 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:50:29,485 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:50:29,636 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:50:29,636 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:50:29,636 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:50:36,568 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:50:36,568 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:50:36,575 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:50:36,575 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:50:36,575 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:50:36,575 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:50:36,576 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:50:37,430 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:50:37,430 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:50:37,430 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:50:37,430 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:50:37,582 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:50:37,582 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:50:37,585 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:50:37,585 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:50:37,587 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:50:37,587 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:50:37,589 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:50:37,589 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:50:37,657 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:50:37,657 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:50:37,657 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:50:37,657 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:50:41,615 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:50:41,616 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:50:58,522 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:50:58,523 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:50:58,523 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:50:58,524 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:50:58,713 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:50:58,713 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:50:58,713 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:51:04,709 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:51:04,709 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:51:04,716 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:51:04,716 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:51:04,716 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:51:04,717 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:51:04,717 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:51:05,559 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:51:05,560 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:51:05,560 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:51:05,560 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:51:05,716 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:51:05,717 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:51:05,721 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:51:05,721 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:51:05,723 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:51:05,723 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:51:05,725 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:51:05,725 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:51:05,789 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7352
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6869
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6814
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5990
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+
+2025-06-11 15:51:05,790 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:51:05,790 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:51:05,790 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:51:07,447 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:51:07,448 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:52:33,344 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:52:33,345 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:52:33,345 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:52:33,346 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:52:33,546 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:52:33,546 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:52:33,546 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:52:41,609 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:52:41,610 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:52:41,617 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:52:41,617 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:52:41,617 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:52:41,618 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:52:41,619 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:52:42,508 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:52:42,509 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:52:42,509 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:52:42,509 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:52:42,674 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:52:42,674 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:52:42,678 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:52:42,678 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:52:42,680 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:52:42,680 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:52:42,681 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:52:42,681 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:52:42,746 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7352
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6869
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6814
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5990
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+
+2025-06-11 15:52:42,746 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:52:42,746 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:52:42,746 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:52:45,424 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:52:45,424 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:53:16,980 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:53:16,980 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:53:16,980 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:53:16,980 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:53:17,139 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:53:17,139 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:53:17,139 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:53:23,432 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:53:23,432 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:53:23,439 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:53:23,440 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:53:23,440 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:53:23,441 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:53:23,441 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:53:24,265 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:53:24,265 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:53:24,265 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:53:24,265 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:53:24,432 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:53:24,432 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:53:24,434 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:53:24,435 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:53:24,437 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:53:24,437 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:53:24,439 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:53:24,439 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:53:24,506 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:53:24,506 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:53:24,506 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:53:24,506 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:53:25,857 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:53:25,857 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:54:22,929 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:54:22,930 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:54:22,930 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:54:22,931 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:54:23,083 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:54:23,083 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:54:23,083 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:54:28,860 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:54:28,861 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:54:28,868 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:54:28,868 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:54:28,868 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:54:28,868 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:54:28,868 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:54:29,760 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:54:29,760 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:54:29,761 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:54:29,761 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:54:29,921 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:54:29,921 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:54:29,923 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:54:29,923 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:54:29,925 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:54:29,925 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:54:29,927 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:54:29,927 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:54:29,989 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:54:29,989 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:54:29,989 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:54:29,989 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:54:31,547 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:54:31,548 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 15:58:49,796 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 15:58:49,797 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:58:49,797 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:58:49,797 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:58:49,956 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:58:49,956 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 15:58:49,956 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:58:57,186 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:58:57,187 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 15:58:57,194 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 15:58:57,194 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 15:58:57,194 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 15:58:57,195 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 15:58:57,195 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 15:58:58,223 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 15:58:58,223 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 15:58:58,223 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 15:58:58,223 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 15:58:58,362 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 15:58:58,362 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 15:58:58,365 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 15:58:58,365 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 15:58:58,367 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 15:58:58,367 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 15:58:58,369 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 15:58:58,369 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 15:58:58,431 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 15:58:58,431 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 15:58:58,431 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 15:58:58,431 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 15:58:59,746 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 15:58:59,746 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 16:01:39,043 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 16:01:39,043 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:01:39,044 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:01:39,044 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:01:39,505 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:01:39,505 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 16:01:39,505 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:01:42,664 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:01:42,665 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 16:01:42,672 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 16:01:42,673 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:01:42,673 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:01:42,673 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 16:01:42,673 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 16:01:43,482 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 16:01:43,483 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 16:01:43,483 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 16:01:43,483 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:01:43,641 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:01:43,641 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 16:01:43,644 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 16:01:43,644 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 16:01:43,647 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 16:01:43,647 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 16:01:43,649 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 16:01:43,649 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 16:01:43,716 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 16:01:43,716 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 16:01:43,716 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 16:01:43,716 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:01:46,222 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:01:46,222 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 16:03:44,382 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 16:03:44,382 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:03:44,382 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:03:44,382 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:03:44,769 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:03:44,769 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 16:03:44,769 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:03:49,464 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:03:49,464 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 16:03:49,467 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 16:03:49,467 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:03:49,467 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:03:49,467 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 16:03:49,467 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 16:03:50,363 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 16:03:50,364 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 16:03:50,364 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 16:03:50,364 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:03:50,525 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:03:50,525 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 16:03:50,528 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 16:03:50,528 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 16:03:50,530 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 16:03:50,530 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 16:03:50,540 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 16:03:50,540 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 16:03:50,606 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 16:03:50,606 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 16:03:50,606 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 16:03:50,606 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:03:53,324 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:03:53,325 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 16:07:09,126 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 16:07:09,127 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:07:09,127 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:07:09,127 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:07:09,527 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:07:09,527 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 16:07:09,528 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:07:15,322 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:07:15,323 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 16:07:15,329 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 16:07:15,329 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:07:15,329 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:07:15,330 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 16:07:15,330 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 16:07:17,051 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Audio Issues</subtopic>
+
+2025-06-11 16:07:17,052 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 16:07:17,052 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Audio Issues
+2025-06-11 16:07:17,052 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:07:17,200 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:07:17,200 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 16:07:17,203 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 16:07:17,203 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 16:07:17,205 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 16:07:17,205 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 16:07:17,207 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub2
+name: Audio Issues
+alias: No Sound, Audio Not Working, Microphone Problems
+Constraints: Requires compatible audio drivers
+Access: All users
+Common_Issues: No sound output, Microphone not detected, Audio dropouts
+
+2025-06-11 16:07:17,207 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 16:07:17,272 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue3
+Description: No audio during call
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.7403
+Related Articles:
+ - Resolving Audio Failures in Webex Calls Due to App Settings (ID: article28)
+ - Fixing Audio Issues During Webex Calls on macOS (ID: article27)
+ - Troubleshooting No Sound During Meetings in Windows (ID: article3)
+---
+Issue ID: issue4
+Description: Microphone not detected
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6821
+Related Articles:
+ - Fixing Microphone Detection Problems (ID: article4)
+---
+Issue ID: issue30
+Description: Noise interference during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.6273
+Related Articles:
+ - Dealing with Random Noise in Webex Calls (ID: article37)
+---
+Issue ID: issue29
+Description: Background echo during calls
+Product: Webex
+Subtopic: Audio Issues
+Score: 0.5875
+Related Articles:
+ - Eliminating Echo in Webex Calls (ID: article36)
+---
+
+2025-06-11 16:07:17,272 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 16:07:17,272 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 16:07:17,272 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:07:23,460 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:07:23,460 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 16:07:46,420 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 16:07:46,420 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:07:46,420 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:07:46,420 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:07:46,583 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:07:46,583 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 16:07:46,583 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:07:50,060 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:07:50,061 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 16:07:50,067 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 16:07:50,068 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:07:50,068 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:07:50,068 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 16:07:50,068 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 16:07:50,930 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Webex</product>
+<subtopic>Webinar - Webex</subtopic>
+
+2025-06-11 16:07:50,930 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 16:07:50,931 - fastapi_scripts - INFO - Classification result: Product - Webex, Subtopic - Webinar - Webex
+2025-06-11 16:07:50,931 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:07:51,086 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:07:51,086 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 16:07:51,090 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 16:07:51,090 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 16:07:51,092 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod1', 'name': 'Webex', 'alias': ['Cisco Webex', 'Webex Meetings', 'Webex Teams']}, 'active_outages': []}
+2025-06-11 16:07:51,092 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 16:07:51,094 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub20
+name: Webinar - Webex
+alias: Webex Webinar, Hosting Webex Webinar, Webex Events
+Constraints: Band 45 or above
+Access: Full-time employees
+Common_Issues: Audio dropouts, sInvite errors, Permissions problems
+
+2025-06-11 16:07:51,094 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 16:07:51,157 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue27
+Description: Unable to host a webinar in Webex
+Product: Webex
+Subtopic: Webinar - Webex
+Score: 0.9663
+Related Articles:
+ - Webex Webinar Troubleshooting Guide (ID: article30)
+ - How to Host a Webinar in Webex (ID: article29)
+---
+Issue ID: issue23
+Description: Inbox rules not applying
+Product: Webex
+Subtopic: Webinar - Webex
+Score: 0.5305
+Related Articles:
+ - Fixing Email Rules That Fail to Apply (ID: article23)
+---
+
+2025-06-11 16:07:51,157 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 16:07:51,157 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 16:07:51,157 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:07:53,227 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:07:53,227 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 16:08:15,905 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 16:08:15,906 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:08:15,906 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:08:15,906 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:08:16,054 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:08:16,054 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 16:08:16,054 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:08:23,544 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:08:23,544 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 16:08:23,551 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 16:08:23,551 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:08:23,551 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:08:23,552 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 16:08:23,552 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 16:08:24,967 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Outlook</product>
+<subtopic>Email Configuration</subtopic>
+
+2025-06-11 16:08:24,968 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 16:08:24,968 - fastapi_scripts - INFO - Classification result: Product - Outlook, Subtopic - Email Configuration
+2025-06-11 16:08:24,968 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:08:25,128 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:08:25,128 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 16:08:25,131 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 16:08:25,131 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 16:08:25,133 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod2', 'name': 'Outlook', 'alias': ['Microsoft Outlook', 'Outlook Email', 'MS Outlook']}, 'active_outages': [{'outage_id': 'out3', 'title': 'Mail Delivery Delays and Failures', 'description': 'Active outage affecting mail delivery in the India Office. Users are experiencing delays and failures in email delivery.', 'start_time': '2025-06-10T09:00:00', 'expected_resolution': '2025-06-10T14:00:00', 'impact': 'Critical', 'location': 'India Office'}]}
+2025-06-11 16:08:25,133 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 16:08:25,134 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub6
+name: Email Configuration
+alias: Setup Email, Configure Outlook, Email Settings
+Constraints: 
+Access: 
+Common_Issues: 
+
+2025-06-11 16:08:25,134 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 16:08:25,200 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue9
+Description: Cannot configure email
+Product: Outlook
+Subtopic: Email Configuration
+Score: 0.7960
+Related Articles:
+ - Troubleshooting Email Configuration Problems (ID: article9)
+---
+
+2025-06-11 16:08:25,200 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 16:08:25,200 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 16:08:25,200 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:08:28,593 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:08:28,593 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 16:08:55,855 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 16:08:55,856 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:08:55,856 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:08:55,856 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:08:56,015 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:08:56,015 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 16:08:56,015 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:08:59,575 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:08:59,575 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 16:08:59,581 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 16:08:59,581 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:08:59,581 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:08:59,582 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 16:08:59,582 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 16:09:05,988 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Outlook</product>
+<subtopic>Outlook Mail</subtopic>
+
+2025-06-11 16:09:05,988 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 16:09:05,989 - fastapi_scripts - INFO - Classification result: Product - Outlook, Subtopic - Outlook Mail
+2025-06-11 16:09:05,989 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:09:06,146 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:09:06,147 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 16:09:06,149 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 16:09:06,149 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 16:09:06,152 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod2', 'name': 'Outlook', 'alias': ['Microsoft Outlook', 'Outlook Email', 'MS Outlook']}, 'active_outages': [{'outage_id': 'out3', 'title': 'Mail Delivery Delays and Failures', 'description': 'Active outage affecting mail delivery in the India Office. Users are experiencing delays and failures in email delivery.', 'start_time': '2025-06-10T09:00:00', 'expected_resolution': '2025-06-10T14:00:00', 'impact': 'Critical', 'location': 'India Office'}]}
+2025-06-11 16:09:06,152 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 16:09:06,153 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub21
+name: Outlook Mail
+alias: Outlook Email, Microsoft Mail, Email Client
+Constraints: 
+Access: All users
+Common_Issues: Mail delivery delays, Sync errors, Mailbox size limits
+
+2025-06-11 16:09:06,153 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 16:09:06,215 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue28
+Description: I’m not receiving mails in Outlook
+Product: Outlook
+Subtopic: Outlook Mail
+Score: 0.9104
+Related Articles:
+ - Fixing Outlook Sync Errors (ID: article34)
+ - Common Outlook Email Issues (ID: article33)
+ - Troubleshooting Mail Delivery in Outlook (ID: article32)
+---
+Issue ID: issue24
+Description: Slack bot not responding
+Product: Outlook
+Subtopic: Outlook Mail
+Score: 0.5663
+Related Articles:
+ - Diagnosing Unresponsive Slack Bots (ID: article24)
+---
+
+2025-06-11 16:09:06,215 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 16:09:06,215 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 16:09:06,215 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:09:07,996 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:09:07,997 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11
+2025-06-11 16:13:43,671 - fastapi_scripts - INFO - Processing RAG query for user_id: user11
+2025-06-11 16:13:43,672 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:13:43,673 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:13:43,673 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:13:43,839 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:13:43,839 - fastapi_scripts - INFO - Generating vanilla prompt.
+2025-06-11 16:13:43,839 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:13:48,894 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:13:48,895 - fastapi_scripts - INFO - RAG query processed successfully for user_id: user11
+2025-06-11 16:13:48,901 - fastapi_scripts - INFO - Processing KG query for user_id: user11
+2025-06-11 16:13:48,902 - fastapi_scripts - INFO - Starting pipeline query processing.
+2025-06-11 16:13:48,902 - fastapi_scripts - INFO - Reading prompts from files.
+2025-06-11 16:13:48,902 - fastapi_scripts - INFO - Reading product data from file.
+2025-06-11 16:13:48,903 - fastapi_scripts - INFO - Classifying product and subtopic from the query.
+2025-06-11 16:13:54,989 - fastapi_scripts - INFO - classify_product_and_subtopic: LLM response - <product>Outlook</product>
+<subtopic>Email Configuration</subtopic>
+
+2025-06-11 16:13:54,989 - fastapi_scripts - INFO - classify_product_and_subtopic: Successfully classified product and subtopic.
+2025-06-11 16:13:54,989 - fastapi_scripts - INFO - Classification result: Product - Outlook, Subtopic - Email Configuration
+2025-06-11 16:13:54,989 - fastapi_scripts - INFO - Performing semantic search.
+2025-06-11 16:13:55,152 - fastapi_scripts - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 16:13:55,152 - fastapi_scripts - INFO - Retrieving user profile from KG.
+2025-06-11 16:13:55,154 - fastapi_scripts - INFO - User profile retrieved: User Info:
+User ID: user11
+Name: Abhishek Bairagi
+Email: abhishek.bairagi@example.com
+Location: India
+Band: 30
+Team: DW
+
+Device Info:
+Device ID: dev11
+Model: MacBook Pro M2
+OS: macos
+OS Version: 14.3
+RAM: 16 GB
+Storage: 512 GB
+Last Update: 2025-06-10T21:29:14.482091
+Issued On: 2025-06-09T21:29:14.482113
+Pending Updates: ['audio driver - mac', 'slack']
+
+2025-06-11 16:13:55,154 - fastapi_scripts - INFO - Retrieving product details with outages from KG.
+2025-06-11 16:13:55,156 - fastapi_scripts - INFO - Retrieved product details with outages: {'product': {'id': 'prod2', 'name': 'Outlook', 'alias': ['Microsoft Outlook', 'Outlook Email', 'MS Outlook']}, 'active_outages': [{'outage_id': 'out3', 'title': 'Mail Delivery Delays and Failures', 'description': 'Active outage affecting mail delivery in the India Office. Users are experiencing delays and failures in email delivery.', 'start_time': '2025-06-10T09:00:00', 'expected_resolution': '2025-06-10T14:00:00', 'impact': 'Critical', 'location': 'India Office'}]}
+2025-06-11 16:13:55,157 - fastapi_scripts - INFO - Retrieving subtopic details from KG.
+2025-06-11 16:13:55,158 - fastapi_scripts - INFO - Subtopic details retrieved: id: sub6
+name: Email Configuration
+alias: Setup Email, Configure Outlook, Email Settings
+Constraints: 
+Access: 
+Common_Issues: 
+
+2025-06-11 16:13:55,158 - fastapi_scripts - INFO - Retrieving relevant issues with articles from KG.
+2025-06-11 16:13:55,220 - fastapi_scripts - INFO - Relevant issues with articles retrieved: Issue ID: issue9
+Description: Cannot configure email
+Product: Outlook
+Subtopic: Email Configuration
+Score: 0.7960
+Related Articles:
+ - Troubleshooting Email Configuration Problems (ID: article9)
+---
+
+2025-06-11 16:13:55,220 - fastapi_scripts - INFO - Generating structured KG output.
+2025-06-11 16:13:55,220 - fastapi_scripts - INFO - Generating  KG+RAG prompt.
+2025-06-11 16:13:55,220 - fastapi_scripts - INFO - Generating responses using LLM.
+2025-06-11 16:14:06,166 - fastapi_scripts - INFO - Pipeline query processing completed.
+2025-06-11 16:14:06,166 - fastapi_scripts - INFO - KG query processed successfully for user_id: user11

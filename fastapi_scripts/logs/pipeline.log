@@ -1,0 +1,13 @@
+2025-06-11 14:43:03,298 - INFO - Starting pipeline query processing.
+2025-06-11 14:43:03,298 - INFO - Reading prompts from files.
+2025-06-11 14:43:03,299 - INFO - Reading product data from file.
+2025-06-11 14:43:03,299 - INFO - Classifying product and subtopic from the query.
+2025-06-11 14:43:03,299 - INFO - AFC is enabled with max remote calls: 10.
+2025-06-11 14:43:07,726 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-06-11 14:43:07,729 - INFO - AFC remote call 1 is done.
+2025-06-11 14:43:07,729 - INFO - Classification result: Product - , Subtopic - 
+2025-06-11 14:43:07,729 - INFO - Performing semantic search.
+2025-06-11 14:43:08,272 - INFO - Retrieved 5 articles from semantic search.
+2025-06-11 14:43:08,272 - INFO - Retrieving user profile from KG.
+2025-06-11 14:43:08,282 - INFO - Retrieving product details with outages from KG.
+2025-06-11 14:43:08,284 - INFO - Retrieved product details with outages: {'error': 'Product not found'}

@@ -1,0 +1,40 @@
+Product: Webex
+- Subtopics:
+    - Meeting Scheduling
+    - Audio Issues
+    - Screen Sharing
+    - Calendar Sync
+    - Webinar - Webex
+
+Product: Outlook
+- Subtopics:
+    - Calendar Sync
+    - Login Problems
+    - Email Configuration
+    - Notifications
+    - Outlook Mail
+
+Product: Slack
+- Subtopics:
+    - Message Threads
+    - Workspace Management
+    - App Integration
+    - Notifications
+
+Product: BYOD
+- Subtopics:
+    - Device Registration
+    - Security Compliance
+    - Network Access
+
+Product: Windows
+- Subtopics:
+    - OS Updates
+    - Driver Issues
+    - Blue Screen Errors
+    - Performance Optimization
+
+Product: Zoom
+- Subtopics:
+    - Webinar - Zoom
+    - Meetings - Zoom
